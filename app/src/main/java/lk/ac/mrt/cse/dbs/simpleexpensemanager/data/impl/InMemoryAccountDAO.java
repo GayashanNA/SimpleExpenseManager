@@ -27,7 +27,8 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 
 /**
- *
+ * This is an In-Memory implementation of the AccountDAO interface. This is not a persistent storage. A HashMap is
+ * used to store the account details temporarily in the memory.
  */
 public class InMemoryAccountDAO implements AccountDAO {
     private Map<String, Account> accounts;
@@ -76,6 +77,7 @@ public class InMemoryAccountDAO implements AccountDAO {
             throw new InvalidAccountException(msg);
         }
         Account account = accounts.get(accountNo);
+        // specific implementation based on the transaction type
         switch (expenseType) {
             case EXPENSE:
                 account.setBalance(account.getBalance() - amount);
