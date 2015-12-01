@@ -5,15 +5,30 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.ExpenseManager;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.R;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 
 /**
  *
  */
 public class ExpenseLogsFragment extends Fragment {
-    public static ExpenseLogsFragment newInstance() {
-        return new ExpenseLogsFragment();
+    private ExpenseManager currentExpenseManager;
+
+    public static ExpenseLogsFragment newInstance(ExpenseManager expenseManager) {
+        ExpenseLogsFragment expenseLogsFragment = new ExpenseLogsFragment();
+        Bundle args = new Bundle();
+        args.putSerializable("expense-manager", expenseManager);
+        expenseLogsFragment.setArguments(args);
+        return expenseLogsFragment;
     }
 
     public ExpenseLogsFragment() {
@@ -21,6 +36,43 @@ public class ExpenseLogsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_expense_logs, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_expense_logs, container, false);
+        TableLayout logsTableLayout = (TableLayout) rootView.findViewById(R.id.logs_table);
+        TableRow tableRowHeader = (TableRow) rootView.findViewById(R.id.logs_table_header);
+
+        currentExpenseManager = (ExpenseManager) getArguments().get("expense-manager");
+        List<Transaction> transactionList = new ArrayList<>();
+        if (currentExpenseManager != null) {
+            transactionList = currentExpenseManager.getTransactionLogs();
+        }
+        generateTransactionsTable(rootView, logsTableLayout, transactionList);
+        return rootView;
+    }
+
+    private void generateTransactionsTable(View rootView, TableLayout logsTableLayout,
+                                           List<Transaction> transactionList) {
+        for (Transaction transaction : transactionList) {
+            TableRow tr = new TableRow(rootView.getContext());
+            TextView lDateVal = new TextView(rootView.getContext());
+
+            SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+            String formattedDate = sdf.format(transaction.getDate());
+            lDateVal.setText(formattedDate);
+            tr.addView(lDateVal);
+
+            TextView lAccountNoVal = new TextView(rootView.getContext());
+            lAccountNoVal.setText(transaction.getAccountNo());
+            tr.addView(lAccountNoVal);
+
+            TextView lExpenseTypeVal = new TextView(rootView.getContext());
+            lExpenseTypeVal.setText(transaction.getExpenseType().toString());
+            tr.addView(lExpenseTypeVal);
+
+            TextView lAmountVal = new TextView(rootView.getContext());
+            lAmountVal.setText(String.valueOf(transaction.getAmount()));
+            tr.addView(lAmountVal);
+
+            logsTableLayout.addView(tr);
+        }
     }
 }
