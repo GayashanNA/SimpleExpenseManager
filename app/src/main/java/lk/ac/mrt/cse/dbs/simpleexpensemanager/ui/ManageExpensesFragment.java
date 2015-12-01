@@ -31,8 +31,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 
-import lk.ac.mrt.cse.dbs.simpleexpensemanager.ExpenseManager;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.R;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.ExpenseManager;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 
@@ -45,8 +45,6 @@ public class ManageExpensesFragment extends Fragment implements View.OnClickList
     private EditText amount;
     private Spinner accountSelector;
     private RadioGroup expenseTypeGroup;
-    private RadioButton expenseType;
-    private RadioButton incomeType;
     private DatePicker datePicker;
     private ExpenseManager currentExpenseManager;
 
@@ -79,8 +77,8 @@ public class ManageExpensesFragment extends Fragment implements View.OnClickList
         accountSelector.setAdapter(adapter);
 
         expenseTypeGroup = (RadioGroup) rootView.findViewById(R.id.expense_type_group);
-        expenseType = (RadioButton) rootView.findViewById(R.id.expense);
-        incomeType = (RadioButton) rootView.findViewById(R.id.income);
+        RadioButton expenseType = (RadioButton) rootView.findViewById(R.id.expense);
+        RadioButton incomeType = (RadioButton) rootView.findViewById(R.id.income);
         datePicker = (DatePicker) rootView.findViewById(R.id.date_selector);
         return rootView;
     }
