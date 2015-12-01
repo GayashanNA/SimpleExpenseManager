@@ -9,10 +9,11 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.ExpenseManager;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.R;
 
 public class MainActivity extends AppCompatActivity {
-
+    private ExpenseManager expenseManager;
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
+        expenseManager = new ExpenseManager();
     }
 
     /**
@@ -64,13 +66,13 @@ public class MainActivity extends AppCompatActivity {
             // Return the respective fragment.
             switch (position) {
                 case 0:
-                    return ManageExpensesFragment.newInstance();
+                    return ManageExpensesFragment.newInstance(expenseManager);
                 case 1:
-                    return AddAccountFragment.newInstance();
+                    return AddAccountFragment.newInstance(expenseManager);
                 case 2:
-                    return ExpenseLogsFragment.newInstance();
+                    return ExpenseLogsFragment.newInstance(expenseManager);
                 default:
-                    return ManageExpensesFragment.newInstance();
+                    return ManageExpensesFragment.newInstance(expenseManager);
             }
         }
 
