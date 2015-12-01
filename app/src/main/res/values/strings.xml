@@ -9,4 +9,8 @@
     <string name="expense_text">Expense</string>
     <string name="income_text">Income</string>
     <string name="expense_type_text">Type</string>
+    <string name="bank_text">Bank</string>
+    <string name="account_holder_text">Account Holder</string>
+    <string name="initial_balance_text">Initial Balance</string>
+    <string name="add_account_text">Save</string>
 </resources>
