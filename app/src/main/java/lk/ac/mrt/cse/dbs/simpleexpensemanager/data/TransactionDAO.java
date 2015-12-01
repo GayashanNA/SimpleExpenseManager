@@ -12,5 +12,7 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 public interface TransactionDAO {
     public void logTransaction(Date date, String accountNo, ExpenseType expenseType, double amount);
 
-    public List<Transaction> getLogs();
+    public List<Transaction> getAllTransactionLogs();
+
+    public List<Transaction> getPaginatedTransactionLogs(int limit);
 }
