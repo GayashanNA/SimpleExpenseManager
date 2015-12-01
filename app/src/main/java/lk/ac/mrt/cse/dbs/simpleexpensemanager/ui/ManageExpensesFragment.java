@@ -36,6 +36,7 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.R;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 
+import static lk.ac.mrt.cse.dbs.simpleexpensemanager.Constants.EXPENSE_MANAGER;
 /**
  *
  */
@@ -52,7 +53,7 @@ public class ManageExpensesFragment extends Fragment implements View.OnClickList
     public static ManageExpensesFragment newInstance(ExpenseManager expenseManager) {
         ManageExpensesFragment manageExpensesFragment = new ManageExpensesFragment();
         Bundle args = new Bundle();
-        args.putSerializable("expense-manager", expenseManager);
+        args.putSerializable(EXPENSE_MANAGER, expenseManager);
         manageExpensesFragment.setArguments(args);
         return manageExpensesFragment;
     }
@@ -68,7 +69,7 @@ public class ManageExpensesFragment extends Fragment implements View.OnClickList
 
         amount = (EditText) rootView.findViewById(R.id.amount);
         accountSelector = (Spinner) rootView.findViewById(R.id.account_selector);
-        currentExpenseManager = (ExpenseManager) getArguments().get("expense-manager");
+        currentExpenseManager = (ExpenseManager) getArguments().get(EXPENSE_MANAGER);
         ArrayAdapter<String> adapter =
                 null;
         if (currentExpenseManager != null) {
@@ -99,7 +100,7 @@ public class ManageExpensesFragment extends Fragment implements View.OnClickList
                 int year = datePicker.getYear();
 
                 if (amountStr.isEmpty()) {
-                    amount.setError("Amount is required.");
+                    amount.setError(getActivity().getString(R.string.err_amount_required));
                 }
 
                 if (currentExpenseManager != null) {
@@ -108,9 +109,10 @@ public class ManageExpensesFragment extends Fragment implements View.OnClickList
                                 ExpenseType.valueOf(type.toUpperCase()), amountStr);
                     } catch (InvalidAccountException e) {
                         new AlertDialog.Builder(this.getActivity())
-                                .setTitle("Unable to update the account : " + selectedAccount)
+                                .setTitle(this.getString(R.string.msg_account_update_unable) + selectedAccount)
                                 .setMessage(e.getMessage())
-                                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                                .setNeutralButton(this.getString(R.string.msg_ok),
+                                        new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         dialog.cancel();

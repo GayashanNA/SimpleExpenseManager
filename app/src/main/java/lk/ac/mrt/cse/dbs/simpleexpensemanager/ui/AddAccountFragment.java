@@ -27,6 +27,7 @@ import android.widget.EditText;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.ExpenseManager;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.R;
 
+import static lk.ac.mrt.cse.dbs.simpleexpensemanager.Constants.EXPENSE_MANAGER;
 /**
  *
  */
@@ -41,7 +42,7 @@ public class AddAccountFragment extends Fragment implements View.OnClickListener
     public static AddAccountFragment newInstance(ExpenseManager expenseManager) {
         AddAccountFragment addAccountFragment = new AddAccountFragment();
         Bundle args = new Bundle();
-        args.putSerializable("expense-manager", expenseManager);
+        args.putSerializable(EXPENSE_MANAGER, expenseManager);
         addAccountFragment.setArguments(args);
         return addAccountFragment;
     }
@@ -59,7 +60,7 @@ public class AddAccountFragment extends Fragment implements View.OnClickListener
         addAccount = (Button) rootView.findViewById(R.id.add_account);
         addAccount.setOnClickListener(this);
 
-        currentExpenseManager = (ExpenseManager) getArguments().get("expense-manager");
+        currentExpenseManager = (ExpenseManager) getArguments().get(EXPENSE_MANAGER);
         return rootView;
     }
 
@@ -74,22 +75,22 @@ public class AddAccountFragment extends Fragment implements View.OnClickListener
 
 
                 if (accountNumStr.isEmpty()) {
-                    accountNumber.setError("Account Number cannot be empty!");
+                    accountNumber.setError(getActivity().getString(R.string.err_acct_number_empty));
                     break;
                 }
 
                 if (bankNameStr.isEmpty()) {
-                    bankName.setError("Bank Name cannot be empty!");
+                    bankName.setError(getActivity().getString(R.string.err_bank_name_empty));
                     break;
                 }
 
                 if (accountHolderStr.isEmpty()) {
-                    accountHolderName.setError("Account Holder's Name cannot be empty!");
+                    accountHolderName.setError(getActivity().getString(R.string.err_acct_holder_empty));
                     break;
                 }
 
                 if (initialBalanceStr.isEmpty()) {
-                    initialBalance.setError("Initial balance cannot be empty!");
+                    initialBalance.setError(getActivity().getString(R.string.err_init_balance_empty));
                     break;
                 }
 

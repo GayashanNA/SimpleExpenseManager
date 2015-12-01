@@ -29,4 +29,9 @@
     <string name="account_holder_text">Account Holder</string>
     <string name="initial_balance_text">Initial Balance</string>
     <string name="add_account_text">Save</string>
+    <string name="msg_account_update_unable">"Unable to update the account : "</string>
+    <string name="msg_ok">Ok</string>
+    <string name="label_manage">Manage</string>
+    <string name="label_add_account">Add account</string>
+    <string name="label_logs">Logs</string>
 </resources>
