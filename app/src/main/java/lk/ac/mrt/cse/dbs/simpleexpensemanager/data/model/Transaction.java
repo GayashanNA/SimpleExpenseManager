@@ -19,7 +19,7 @@ package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model;
 import java.util.Date;
 
 /**
- *
+ * This POJO holds the information regarding a single transaction.
  */
 public class Transaction {
     private Date date;

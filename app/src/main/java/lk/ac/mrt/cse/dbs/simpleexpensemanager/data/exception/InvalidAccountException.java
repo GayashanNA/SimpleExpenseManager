@@ -17,7 +17,7 @@
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception;
 
 /**
- *
+ * This exception is thrown in case of an invalid account number/account is involved in a transaction.
  */
 public class InvalidAccountException extends Exception {
     public InvalidAccountException(String detailMessage) {

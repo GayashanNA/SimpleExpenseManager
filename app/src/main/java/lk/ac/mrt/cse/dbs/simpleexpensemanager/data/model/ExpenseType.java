@@ -17,7 +17,7 @@
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model;
 
 /**
- *
+ * This ENUM holds the types of different expenditures.
  */
 public enum ExpenseType {
     EXPENSE, INCOME
