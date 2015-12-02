@@ -28,7 +28,7 @@ expenseManager = new InMemoryDemoExpenseManager();
 Your implementation
 ``` Java
 /***  Setup the persistent storage implementation  ***/
-expenseManager = new PersistentExpenseManager();
+expenseManager = new PersistentExpenseManager(context);
 /*** END ***/
 ```
 
@@ -52,7 +52,7 @@ You can make improvements to the project as you require. However this project is
   Your implementation
   ```Java
   /***  Setup the persistent storage implementation  ***/
-  expenseManager = new PersistentExpenseManager();
+  expenseManager = new PersistentExpenseManager(context);
   /*** END ***/
   ```
 6. Commit your code and push to your forked repository in GitHub.
