@@ -1,0 +1,8 @@
+# Ignore everything in this file
+target/
+.classpath
+.settings
+.project
+*.i??
+.idea/
+.gradle/
