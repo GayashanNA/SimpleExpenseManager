@@ -41,7 +41,7 @@ You can make improvements to the project as you require. However this project is
   * [`AccountDAO`](/app/src/main/java/lk/ac/mrt/cse/dbs/simpleexpensemanager/data/AccountDAO.java)
   * [`TransactionDAO`](/app/src/main/java/lk/ac/mrt/cse/dbs/simpleexpensemanager/data/TransactionDAO.java)
 4. Extend and implement the `setup()` method of the abstract class [`ExpenseManager`](/app/src/main/java/lk/ac/mrt/cse/dbs/simpleexpensemanager/control/ExpenseManager.java).
-5. Change current implementation to your implementation in the [`MainActivity`](/app/src/main/java/lk/ac/mrt/cse/dbs/simpleexpensemanager/ui/MainActivity.java) ui class.
+5. Change current implementation to your implementation in the [`MainActivity`](/app/src/main/java/lk/ac/mrt/cse/dbs/simpleexpensemanager/ui/MainActivity.java) UI class.
 
   Current implementation
   ```Java
