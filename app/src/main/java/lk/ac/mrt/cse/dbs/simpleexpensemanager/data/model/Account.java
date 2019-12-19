@@ -16,10 +16,22 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model;
 
+//import android.arch.persistence.room.Entity;
+//import android.arch.persistence.room.PrimaryKey;
+
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+import java.io.Serializable;
+
 /**
  * This POJO holds the information about an account.
  */
-public class Account {
+@Entity
+public class Account implements Serializable {
+    @PrimaryKey
+    @NonNull
     private String accountNo;
     private String bankName;
     private String accountHolderName;

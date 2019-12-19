@@ -78,14 +78,12 @@ public class InMemoryAccountDAO implements AccountDAO {
         }
         Account account = accounts.get(accountNo);
         // specific implementation based on the transaction type
-        switch (expenseType) {
-            case EXPENSE:
-                account.setBalance(account.getBalance() - amount);
-                break;
-            case INCOME:
-                account.setBalance(account.getBalance() + amount);
-                break;
+        if (expenseType.equals("EXPENSE")){
+            account.setBalance(account.getBalance() - amount);
+        }else if(expenseType.equals("INCOME")){
+            account.setBalance(account.getBalance() + amount);
         }
+
         accounts.put(accountNo, account);
     }
 }

@@ -16,16 +16,31 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data;
 
+//import android.arch.persistence.room.Dao;
+//import android.arch.persistence.room.Delete;
+//import android.arch.persistence.room.Insert;
+//import android.arch.persistence.room.Query;
+
+import androidx.room.Dao;
+import androidx.room.Delete;
+import androidx.room.Insert;
+import androidx.room.Query;
+
 import java.util.List;
 
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 
+import static androidx.room.OnConflictStrategy.IGNORE;
+
+//import static android.arch.persistence.room.OnConflictStrategy.IGNORE;
+
 /**
  * AccountDAO interface can be used to access the account details, including listing, adding, updating, removing
  * accounts and updating account balance.
  */
+@Dao
 public interface AccountDAO {
 
     /***
@@ -33,6 +48,7 @@ public interface AccountDAO {
      *
      * @return - list of account numbers as String
      */
+    @Query("select accountNo from account")
     public List<String> getAccountNumbersList();
 
     /***
@@ -40,6 +56,7 @@ public interface AccountDAO {
      *
      * @return - list of Account objects.
      */
+    @Query("select * from account")
     public List<Account> getAccountsList();
 
     /***
@@ -49,6 +66,7 @@ public interface AccountDAO {
      * @return - the corresponding Account
      * @throws InvalidAccountException - if the account number is invalid
      */
+    @Query("select * from account where accountNo = :accountNo")
     public Account getAccount(String accountNo) throws InvalidAccountException;
 
     /***
@@ -56,6 +74,7 @@ public interface AccountDAO {
      *
      * @param account - the account to be added.
      */
+    @Insert(onConflict = IGNORE)
     public void addAccount(Account account);
 
     /***
@@ -64,6 +83,7 @@ public interface AccountDAO {
      * @param accountNo - of the account to be removed.
      * @throws InvalidAccountException - if the account number is invalid
      */
+    @Delete
     public void removeAccount(String accountNo) throws InvalidAccountException;
 
     /***
@@ -78,6 +98,7 @@ public interface AccountDAO {
      * @param amount      - amount involved
      * @throws InvalidAccountException - if the account number is invalid
      */
+    @Insert
     public void updateBalance(String accountNo, ExpenseType expenseType, double amount) throws InvalidAccountException;
 
 }

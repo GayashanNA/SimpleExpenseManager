@@ -16,12 +16,30 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model;
 
+//import android.arch.persistence.room.Entity;
+//import android.arch.persistence.room.PrimaryKey;
+
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.util.Date;
 
 /**
  * This POJO holds the information regarding a single transaction.
  */
+@Entity
 public class Transaction {
+    @PrimaryKey(autoGenerate = true)
+    private int transactionId;
+
+    public int getTransactionId() {
+        return transactionId;
+    }
+
+    public void setTransactionId(int transactionId) {
+        this.transactionId = transactionId;
+    }
+
     private Date date;
 
     public Date getDate() {
