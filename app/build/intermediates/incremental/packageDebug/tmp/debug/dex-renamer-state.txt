@@ -1,0 +1,4 @@
+#Thu Dec 19 10:04:57 IST 2019
+base.0=C\:\\Users\\Nilu\\Desktop\\SimpleExpenseManager-master\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

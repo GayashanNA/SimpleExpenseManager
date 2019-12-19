@@ -1,0 +1,37 @@
+<!--
+  ~ Copyright 2015 Department of Computer Science and Engineering, University of Moratuwa.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~                  http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">SimpleExpenseManager</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="account_text">Account No.</string>
+    <string name="amount_text">Amount</string>
+    <string name="date_text">Date</string>
+    <string name="submit">Submit</string>
+    <string name="expense_text">Expense</string>
+    <string name="income_text">Income</string>
+    <string name="expense_type_text">Type</string>
+    <string name="bank_text">Bank</string>
+    <string name="account_holder_text">Account Holder</string>
+    <string name="initial_balance_text">Initial Balance</string>
+    <string name="add_account_text">Save</string>
+    <string name="msg_account_update_unable">"Unable to update the account : "</string>
+    <string name="msg_ok">Ok</string>
+    <string name="label_manage">Manage</string>
+    <string name="label_add_account">Add account</string>
+    <string name="label_logs">Logs</string>
+</resources>
