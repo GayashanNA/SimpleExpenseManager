@@ -16,39 +16,10 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model;
 
-//import android.arch.persistence.room.Entity;
-
-import androidx.annotation.NonNull;
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
-
-import java.io.Serializable;
-
 /**
  * This ENUM holds the types of different expenditures.
  */
-@Entity
-public class ExpenseType implements Serializable {
-
-    @PrimaryKey @NonNull
-    private  String code;
-
-    public ExpenseType(@NonNull String code) {
-        this.code = code;
-    }
-
-    @NonNull
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(@NonNull String code) {
-        this.code = code;
-    }
-
-    public static ExpenseType valueOf(String expenseType){
-        return  new ExpenseType(expenseType);
-    }
-
-
+public enum ExpenseType {
+    EXPENSE, INCOME
 }
+
