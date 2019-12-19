@@ -49,5 +49,5 @@ public class PersistentAccountDAO implements AccountDAO {
 
     @Override
     public void updateBalance(String accountNo, ExpenseType expenseType, double amount) throws InvalidAccountException {
-        databaseHandler.UpdateDetails()
+        databaseHandler.UpdateDetails();
 }
