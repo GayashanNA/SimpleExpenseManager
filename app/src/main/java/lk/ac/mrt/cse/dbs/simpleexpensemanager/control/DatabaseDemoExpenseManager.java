@@ -20,12 +20,12 @@ public class DatabaseDemoExpenseManager extends ExpenseManager {
     @Override
     public void setup() {
 
-        SQLiteDatabase db = openOrCreateDatabase("ExpenseManager", MODE_PRIVATE, null);
+        SQLiteDatabase db = SQLiteDatabase.openOrCreateDatabase("ExpenseManager", null);
 
-        TransactionDAO databaseTransactionDAO = new TransactionDAO(db);
+        TransactionDAO databaseTransactionDAO = new DatabaseTransactionDAO(db);
         setTransactionsDAO(databaseTransactionDAO);
 
-        AccountDAO databseAccountDAO = new AccountDAO(db);
+        AccountDAO databseAccountDAO = new DatabaseAccountDAO(db);
         setAccountsDAO(databseAccountDAO);
 
         // dummy data

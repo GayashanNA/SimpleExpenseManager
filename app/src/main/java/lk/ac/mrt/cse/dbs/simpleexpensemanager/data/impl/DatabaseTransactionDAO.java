@@ -2,7 +2,7 @@
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.impl;
 
 import java.util.Date;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.TransactionDAO;
@@ -26,14 +26,13 @@ public class DatabaseTransactionDAO implements TransactionDAO {
 
     @Override
     public void logTransaction(Date date, String accountNo, ExpenseType expenseType, double amount) {
-        SQLiteDatabase db = DatabaseDAOFactory.getDatabase();
         db.execSQL("INSERT INTO transaction_account (date, account_no, expense_type, amount) VALUES ("+date+", '"+accountNo+"', '"+expenseType+"', "+amount+")");
     }
 
     @Override
     public List<Transaction> getAllTransactionLogs() {
         List<Transaction> transactions = new ArrayList<Transaction>();
-        Cursor resultSet = db.rawQuery("SELECT * FROM transaction_account;",null);
+        Cursor cursor = db.rawQuery("SELECT * FROM transaction_account;",null);
 
         if (!cursor.moveToFirst()) {
             return transactions;

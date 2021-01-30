@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
         /***  Begin generating dummy data for In-Memory implementation  ***/
-//        expenseManager = new InMemoryDemoExpenseManager();
-        expenseManager = new DatabaseDemoExpenseManager();
+        expenseManager = new InMemoryDemoExpenseManager();
+//        expenseManager = new DatabaseDemoExpenseManager();
 
         /*** END ***/
     }

@@ -25,13 +25,13 @@ public class DatabaseAccountDAO implements AccountDAO {
     @Override
     public List<String> getAccountNumbersList() {
         List<String> accountNumbers = new ArrayList<String>();
-        Cursor resultSet = db.rawQuery("SELECT account_no FROM account;",null);
+        Cursor cursor = db.rawQuery("SELECT account_no FROM account;",null);
 
         if (!cursor.moveToFirst()) {
             return accountNumbers;
         }
 
-        Account account_no;
+        String account_no;
 
         do {
 
@@ -40,13 +40,13 @@ public class DatabaseAccountDAO implements AccountDAO {
 
         } while (cursor.moveToNext());
 
-        return accounts;
+        return accountNumbers;
     }
 
     @Override
     public List<Account> getAccountsList() {
         List<Account> accounts = new ArrayList<Account>();
-        Cursor resultSet = db.rawQuery("SELECT * FROM account;",null);
+        Cursor cursor = db.rawQuery("SELECT * FROM account;",null);
 
         if (!cursor.moveToFirst()) {
             return accounts;
@@ -66,8 +66,8 @@ public class DatabaseAccountDAO implements AccountDAO {
 
     @Override
     public Account getAccount(String accountNo) throws InvalidAccountException {
-        Cursor resultSet = db.rawQuery("SELECT * FROM account WHERE account_no='"+accountNo+"';",null);
-        if (resultSet.moveFirst()) {
+        Cursor cursor = db.rawQuery("SELECT * FROM account WHERE account_no='"+accountNo+"';",null);
+        if (cursor.moveToFirst()) {
             Account account = new Account(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getDouble(3));
             return account;
         }
@@ -85,7 +85,7 @@ public class DatabaseAccountDAO implements AccountDAO {
     @Override
     public void removeAccount(String accountNo) throws InvalidAccountException {
         Cursor resultSet = db.rawQuery("SELECT * FROM account WHERE account_no='"+accountNo+"';",null);
-        if (resultSet.moveFirst()) {
+        if (resultSet.moveToFirst()) {
             db.execSQL("DELETE FROM account WHERE account_no='"+accountNo+"';");
             return;
 
@@ -98,18 +98,21 @@ public class DatabaseAccountDAO implements AccountDAO {
     @Override
     public void updateBalance(String accountNo, ExpenseType expenseType, double amount) throws InvalidAccountException {
         Cursor resultSet = db.rawQuery("SELECT * FROM account WHERE account_no='"+accountNo+"';",null);
-        if (!resultSet.moveFirst()) {
+        if (!resultSet.moveToFirst()) {
             String msg = "Account " + accountNo + " is invalid.";
             throw new InvalidAccountException(msg);
         }
 
+        double balance = resultSet.getDouble(3);
+        double newBalance;
+
         switch (expenseType) {
             case EXPENSE:
-                double newBalance = account.getBalance() - amount;
+                newBalance = balance - amount;
                 db.execSQL("UPDATE TABLE account SET balance="+newBalance+" WHERE account_no='"+accountNo+"';");
                 break;
             case INCOME:
-                double newBalance = account.getBalance() + amount;
+                newBalance = balance + amount;
                 db.execSQL("UPDATE TABLE account SET balance="+newBalance+" WHERE account_no='"+accountNo+"';");
                 break;
         }
