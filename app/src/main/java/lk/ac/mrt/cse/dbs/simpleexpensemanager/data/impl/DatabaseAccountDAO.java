@@ -10,7 +10,6 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.AccountDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
-import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.factory.DatabaseDAOFactory;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
@@ -19,8 +18,8 @@ import android.database.sqlite.SQLiteDatabase;
 public class DatabaseAccountDAO implements AccountDAO {
     private SQLiteDatabase db;
 
-    public DatabaseAccountDAO() {
-        this.db = DatabaseDAOFactory.getDatabase();
+    public DatabaseAccountDAO(SQLiteDatabase db) {
+        this.db = db;
     }
 
     @Override

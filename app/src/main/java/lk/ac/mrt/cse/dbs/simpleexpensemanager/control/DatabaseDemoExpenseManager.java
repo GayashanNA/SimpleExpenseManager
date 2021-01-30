@@ -1,14 +1,12 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.control;
 
-import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.DatabaseDAOFactoryAbstract;
-
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.AccountDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.TransactionDAO;
-import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.factory.DatabaseDAOFactory;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.impl.DatabaseAccountDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.impl.DatabaseTransactionDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
+import android.database.sqlite.SQLiteDatabase;
 
 /**
  *
@@ -22,12 +20,12 @@ public class DatabaseDemoExpenseManager extends ExpenseManager {
     @Override
     public void setup() {
 
-        DatabaseDAOFactory databaseDAOFactory = DatabaseDAOFactoryAbstract.getDatabaseDAOFactory();
+        SQLiteDatabase db = openOrCreateDatabase("ExpenseManager", MODE_PRIVATE, null);
 
-        TransactionDAO databaseTransactionDAO = databaseDAOFactory.getDatabaseAccountDAO();
+        TransactionDAO databaseTransactionDAO = new TransactionDAO(db);
         setTransactionsDAO(databaseTransactionDAO);
 
-        AccountDAO databseAccountDAO = databaseDAOFactory.getDatabaseTransactionDAO();
+        AccountDAO databseAccountDAO = new AccountDAO(db);
         setAccountsDAO(databseAccountDAO);
 
         // dummy data

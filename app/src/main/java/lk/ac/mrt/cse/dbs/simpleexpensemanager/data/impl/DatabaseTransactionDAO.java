@@ -8,7 +8,6 @@ import java.util.List;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.TransactionDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
-import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.factory.DatabaseDAOFactory;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
@@ -21,8 +20,8 @@ import android.database.sqlite.SQLiteDatabase;
 public class DatabaseTransactionDAO implements TransactionDAO {
     private SQLiteDatabase db;
 
-    public DatabaseTransactionDAO() {
-        this.db = DatabaseDAOFactory.getDatabase();
+    public DatabaseTransactionDAO(SQLiteDatabase db) {
+        this.db = db;
     }
 
     @Override
