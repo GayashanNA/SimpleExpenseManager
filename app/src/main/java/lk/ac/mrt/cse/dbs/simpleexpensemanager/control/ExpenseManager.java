@@ -17,6 +17,7 @@
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.control;
 
 import java.io.Serializable;
+import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -24,6 +25,7 @@ import java.util.List;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.exception.ExpenseManagerException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.AccountDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.TransactionDAO;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.DatabaseConnectionException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
@@ -58,7 +60,7 @@ public abstract class ExpenseManager implements Serializable {
      * @throws InvalidAccountException
      */
     public void updateAccountBalance(String accountNo, int day, int month, int year, ExpenseType expenseType,
-                                     String amount) throws InvalidAccountException {
+                                     String amount) throws InvalidAccountException, DatabaseConnectionException {
         Calendar calendar = Calendar.getInstance();
         calendar.set(year, month, day);
         Date transactionDate = calendar.getTime();
@@ -87,7 +89,7 @@ public abstract class ExpenseManager implements Serializable {
      * @param accountHolderName
      * @param initialBalance
      */
-    public void addAccount(String accountNo, String bankName, String accountHolderName, double initialBalance) {
+    public void addAccount(String accountNo, String bankName, String accountHolderName, double initialBalance) throws DatabaseConnectionException {
         Account account = new Account(accountNo, bankName, accountHolderName, initialBalance);
         accountsHolder.addAccount(account);
     }
@@ -132,5 +134,5 @@ public abstract class ExpenseManager implements Serializable {
      * This method should be implemented by the concrete implementation of this class. It will dictate how the DAO
      * objects will be initialized.
      */
-    public abstract void setup() throws ExpenseManagerException;
+    public abstract void setup() throws ExpenseManagerException, DatabaseConnectionException, ParseException;
 }

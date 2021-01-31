@@ -1,9 +1,12 @@
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data;
 
+import java.text.ParseException;
+import java.util.List;
 import java.util.Map;
 
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.DatabaseConnectionException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 
 public interface DatabaseHandler {
     /**
@@ -36,4 +39,19 @@ public interface DatabaseHandler {
      * @throws DatabaseConnectionException - if unable to update the database
      */
     public void updateAccount(Account account) throws DatabaseConnectionException;
+
+    /**
+     * Fetch all the transactions from the database.
+     *
+     * @return List of transactions
+     */
+    public List<Transaction> fetchAllTransactions() throws ParseException;
+
+    /**
+     * Insert a transaction to the database
+     *
+     * @param transaction - transaction to be added
+     * @throws DatabaseConnectionException
+     */
+    public void addTransaction(Transaction transaction) throws DatabaseConnectionException;
 }

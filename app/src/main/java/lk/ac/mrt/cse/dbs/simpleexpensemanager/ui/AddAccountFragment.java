@@ -26,6 +26,7 @@ import android.widget.EditText;
 
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.R;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.ExpenseManager;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.DatabaseConnectionException;
 
 import static lk.ac.mrt.cse.dbs.simpleexpensemanager.Constants.EXPENSE_MANAGER;
 /**
@@ -95,8 +96,12 @@ public class AddAccountFragment extends Fragment implements View.OnClickListener
                 }
 
                 if (currentExpenseManager != null) {
-                    currentExpenseManager.addAccount(accountNumStr, bankNameStr, accountHolderStr,
-                            Double.parseDouble(initialBalanceStr));
+                    try {
+                        currentExpenseManager.addAccount(accountNumStr, bankNameStr, accountHolderStr,
+                                Double.parseDouble(initialBalanceStr));
+                    } catch (DatabaseConnectionException e) {
+                        e.printStackTrace();
+                    }
                 }
                 cleanUp();
                 break;

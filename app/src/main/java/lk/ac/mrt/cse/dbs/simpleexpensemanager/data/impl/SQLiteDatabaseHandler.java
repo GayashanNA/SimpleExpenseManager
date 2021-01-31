@@ -7,41 +7,51 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.annotation.Nullable;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.DatabaseHandler;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.DatabaseConnectionException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 
 public class SQLiteDatabaseHandler extends SQLiteOpenHelper implements DatabaseHandler {
-    public final String DDL = "CREATE TABLE account(\n" +
-            "\taccount_no TEXT(100) PRIMARY KEY,\n" +
-            "   \tbank_name TEXT(100) NOT NULL,\n" +
-            "\taccount_holder_name TEXT(100) NOT NULL,\n" +
-            "\tbalance REAL NOT NULL);\n" +
-            "CREATE TABLE transaction_account (\n" +
-            "\taccount_no TEXT(100) NOT NULL,\n" +
-            "\texpense_type TEXT NOT NULL CHECK (expense_type == \"EXPENSE\" OR expense_type == \"INCOME\"),\n" +
-            "\tamount REAL NOT NULL,\n" +
-            "\tdate NUMERIC NOT NULL,\n" +
-            "\tFOREIGN KEY(account_no) REFERENCES account(account_no));";
+    private final String DDL_ACCOUNT  =  "CREATE TABLE account(" +
+            "account_no TEXT(100) PRIMARY KEY, " +
+            "bank_name TEXT(100) NOT NULL, " +
+            "account_holder_name TEXT(100) NOT NULL, " +
+            "balance REAL NOT NULL)";
+    private final String DDL_TRANSACTION  =  "CREATE TABLE transaction_log(" +
+            "date DATE NOT NULL, " +
+            "account_no TEXT(100) NOT NULL, " +
+            "expense_type TEXT NOT NULL CHECK (expense_type == \"EXPENSE\" OR expense_type == \"INCOME\"), " +
+            "amount REAL NOT NULL, " +
+            "FOREIGN KEY(account_no) REFERENCES account(account_no))";
+    private final SQLiteDatabase sql;
+    private final DateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
 
-    private SQLiteDatabase sql;
-
-    public SQLiteDatabaseHandler(@Nullable Context context) {
-        super(context, "expense_manager", null, 1);
+    public SQLiteDatabaseHandler(Context context) {
+        super(context, "180176R", null, 2);
         sql = this.getWritableDatabase();
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL(DDL);
+        System.out.println("Helooooooooooooooooooooo");
+        sqLiteDatabase.execSQL(DDL_ACCOUNT);
+        sqLiteDatabase.execSQL(DDL_TRANSACTION);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS account; DROP TABLE IF EXISTS transaction_account;");
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS account");
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS transaction_account");
         onCreate(sqLiteDatabase);
     }
 
@@ -82,5 +92,30 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper implements DatabaseH
         cv.put("balance",account.getBalance());
         if (sql.update("account",cv,"account_no = ?",whereArgs) == 0)
             throw new DatabaseConnectionException("Updating account failed");
+    }
+
+    @Override
+    public List<Transaction> fetchAllTransactions() throws ParseException {
+        Cursor result = this.sql.rawQuery("SELECT * FROM transaction_log", null);
+        List<Transaction> transactions = new LinkedList<Transaction>();
+
+        while(result.moveToNext())
+            transactions.add(new Transaction(
+                    DATE_FORMAT.parse(result.getString(0)),
+                    result.getString(1),
+                    ExpenseType.valueOf(result.getString(2)),
+                    result.getDouble(3)));
+        return transactions;
+    }
+
+    @Override
+    public void addTransaction(Transaction transaction) throws DatabaseConnectionException {
+        ContentValues cv = new ContentValues(4);
+        cv.put("date",DATE_FORMAT.format(transaction.getDate()));
+        cv.put("account_no", transaction.getAccountNo());
+        cv.put("expense_type", transaction.getExpenseType().toString());
+        cv.put("amount", transaction.getAmount());
+        if (this.sql.insert("transaction_log",null, cv) == -1)
+            throw new DatabaseConnectionException("Inserting transaction failed");
     }
 }
