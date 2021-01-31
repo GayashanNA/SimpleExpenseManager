@@ -19,12 +19,12 @@ package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception;
 /**
  * This exception is thrown in case of an connection error to the SQLite database
  */
-public class SQLiteConnectionException extends Exception {
-    public SQLiteConnectionException(String detailMessage) {
+public class DatabaseConnectionException extends Exception {
+    public DatabaseConnectionException(String detailMessage) {
         super(detailMessage);
     }
 
-    public SQLiteConnectionException(String detailMessage, Throwable throwable) {
+    public DatabaseConnectionException(String detailMessage, Throwable throwable) {
         super(detailMessage, throwable);
     }
 }
