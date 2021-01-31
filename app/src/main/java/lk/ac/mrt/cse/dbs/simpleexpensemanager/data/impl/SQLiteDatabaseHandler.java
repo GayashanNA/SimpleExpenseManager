@@ -50,7 +50,6 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper implements DatabaseH
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        System.out.println("Helooooooooooooooooooooo");
         sqLiteDatabase.execSQL(DDL_ACCOUNT);
         sqLiteDatabase.execSQL(DDL_TRANSACTION);
     }

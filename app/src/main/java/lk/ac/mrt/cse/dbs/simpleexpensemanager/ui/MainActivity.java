@@ -65,11 +65,13 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
+        /*** Setup the persistent storage implementation ***/
         try {
             expenseManager = new PersistentExpenseManager(this);
         } catch (Exception e) {
             e.printStackTrace();
         }
+        /*** END ***/
     }
 
     /**
