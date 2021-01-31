@@ -34,11 +34,18 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper implements DatabaseH
             "amount REAL NOT NULL, " +
             "FOREIGN KEY(account_no) REFERENCES account(account_no))";
     private final SQLiteDatabase sql;
-    private final DateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
+    private final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd");
 
-    public SQLiteDatabaseHandler(Context context) {
+    private static SQLiteDatabaseHandler instance = null;
+
+    private SQLiteDatabaseHandler(Context context) {
         super(context, "180176R", null, 2);
         sql = this.getWritableDatabase();
+    }
+
+    public static SQLiteDatabaseHandler getInstance(Context context) {
+        if (instance == null) instance = new SQLiteDatabaseHandler(context);
+        return instance;
     }
 
     @Override

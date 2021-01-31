@@ -18,7 +18,7 @@ public class PersistentTransactionDAO implements TransactionDAO {
     private final List<Transaction> transactions;
 
     public PersistentTransactionDAO(Context context) throws ParseException {
-        dbh = new SQLiteDatabaseHandler(context);
+        dbh = SQLiteDatabaseHandler.getInstance(context);
         transactions = dbh.fetchAllTransactions();
     }
 

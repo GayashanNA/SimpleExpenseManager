@@ -18,7 +18,7 @@ public class PersistentAccountDAO implements AccountDAO {
     private final Map<String, Account> accounts;
 
     public PersistentAccountDAO (Context context) {
-        dbh = new SQLiteDatabaseHandler(context);
+        dbh = SQLiteDatabaseHandler.getInstance(context);
         accounts = dbh.fetchAllAccounts();
     }
 
