@@ -14,29 +14,17 @@
  *
  */
 
-apply plugin: 'com.android.application'
+package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception;
 
-android {
-    compileSdkVersion 23
-
-    defaultConfig {
-        applicationId "lk.ac.mrt.cse.dbs.simpleexpensemanager"
-        minSdkVersion 19
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+/**
+ * This exception is thrown in case of an connection error to the SQLite database
+ */
+public class SQLiteConnectionException extends Exception {
+    public SQLiteConnectionException(String detailMessage) {
+        super(detailMessage);
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-}
 
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
+    public SQLiteConnectionException(String detailMessage, Throwable throwable) {
+        super(detailMessage, throwable);
+    }
 }
