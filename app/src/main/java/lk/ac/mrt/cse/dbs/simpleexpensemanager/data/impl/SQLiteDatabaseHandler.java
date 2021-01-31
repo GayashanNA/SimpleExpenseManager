@@ -33,14 +33,12 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper implements DatabaseH
             "expense_type TEXT NOT NULL CHECK (expense_type == \"EXPENSE\" OR expense_type == \"INCOME\"), " +
             "amount REAL NOT NULL, " +
             "FOREIGN KEY(account_no) REFERENCES account(account_no))";
-    private final SQLiteDatabase sql;
     private final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd");
 
     private static SQLiteDatabaseHandler instance = null;
 
     private SQLiteDatabaseHandler(Context context) {
         super(context, "180176R", null, 2);
-        sql = this.getWritableDatabase();
     }
 
     public static SQLiteDatabaseHandler getInstance(Context context) {
@@ -63,46 +61,62 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper implements DatabaseH
 
     @Override
     public Map<String, Account> fetchAllAccounts() {
-        Cursor result = this.sql.rawQuery("SELECT * FROM account", null);
+        SQLiteDatabase sqlDB = this.getWritableDatabase();
+        Cursor result = sqlDB.rawQuery("SELECT * FROM account", null);
         Map<String, Account> accounts = new HashMap<String, Account>();
         while(result.moveToNext())
             accounts.put(result.getString(0),new Account(result.getString(0),result.getString(1),result.getString(2),result.getDouble(3)));
+        sqlDB.close();
         return accounts;
     }
 
     @Override
     public void addAccount(Account account) throws DatabaseConnectionException {
+        SQLiteDatabase sqlDB = this.getWritableDatabase();
+
         ContentValues cv = new ContentValues(4);
         cv.put("account_no", account.getAccountNo());
         cv.put("bank_name", account.getBankName());
         cv.put("account_holder_name", account.getAccountHolderName());
         cv.put("balance", account.getBalance());
-        if (this.sql.insert("account",null,cv) == -1)
-            throw new DatabaseConnectionException("Inserting account failed");
+
+        long result = sqlDB.insert("account",null,cv);
+        sqlDB.close();
+        if (result == -1)
+            throw new DatabaseConnectionException("Account insertion failed");
     }
 
     @Override
     public void removeAccount(String accountNo) throws DatabaseConnectionException {
+        SQLiteDatabase sqlDB = this.getWritableDatabase();
         String[] whereArgs = {accountNo};
-        if (this.sql.delete("account","account_no = ?", whereArgs) == 0)
+        long result = sqlDB.delete("account","account_no = ?", whereArgs);
+        sqlDB.close();
+        if (result == 0)
             throw new DatabaseConnectionException("Deleting account failed");
     }
 
     @Override
     public void updateAccount(Account account) throws DatabaseConnectionException {
+        SQLiteDatabase sqlDB = this.getWritableDatabase();
         String[] whereArgs = {account.getAccountNo()};
+
         ContentValues cv = new ContentValues(4);
         cv.put("account_no",account.getAccountNo());
         cv.put("bank_name",account.getBankName());
         cv.put("account_holder_name",account.getAccountHolderName());
         cv.put("balance",account.getBalance());
-        if (sql.update("account",cv,"account_no = ?",whereArgs) == 0)
+
+        long result = sqlDB.update("account",cv,"account_no = ?",whereArgs);
+        sqlDB.close();
+        if (result == 0)
             throw new DatabaseConnectionException("Updating account failed");
     }
 
     @Override
     public List<Transaction> fetchAllTransactions() throws ParseException {
-        Cursor result = this.sql.rawQuery("SELECT * FROM transaction_log", null);
+        SQLiteDatabase sqlDB = this.getWritableDatabase();
+        Cursor result = sqlDB.rawQuery("SELECT * FROM transaction_log", null);
         List<Transaction> transactions = new LinkedList<Transaction>();
 
         while(result.moveToNext())
@@ -111,17 +125,23 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper implements DatabaseH
                     result.getString(1),
                     ExpenseType.valueOf(result.getString(2)),
                     result.getDouble(3)));
+        sqlDB.close();
         return transactions;
     }
 
     @Override
     public void addTransaction(Transaction transaction) throws DatabaseConnectionException {
+        SQLiteDatabase sqlDB = this.getWritableDatabase();
+
         ContentValues cv = new ContentValues(4);
         cv.put("date",DATE_FORMAT.format(transaction.getDate()));
         cv.put("account_no", transaction.getAccountNo());
         cv.put("expense_type", transaction.getExpenseType().toString());
         cv.put("amount", transaction.getAmount());
-        if (this.sql.insert("transaction_log",null, cv) == -1)
+
+        long result = sqlDB.insert("transaction_log",null, cv);
+        sqlDB.close();
+        if (result == -1)
             throw new DatabaseConnectionException("Inserting transaction failed");
     }
 }
