@@ -28,6 +28,7 @@ import android.widget.EditText;
 
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.R;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.ExpenseManager;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.exception.ExpenseManagerException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.DatabaseConnectionException;
 
 import static lk.ac.mrt.cse.dbs.simpleexpensemanager.Constants.EXPENSE_MANAGER;
@@ -101,9 +102,9 @@ public class AddAccountFragment extends Fragment implements View.OnClickListener
                     try {
                         currentExpenseManager.addAccount(accountNumStr, bankNameStr, accountHolderStr,
                                 Double.parseDouble(initialBalanceStr));
-                    } catch (DatabaseConnectionException e) {
+                    } catch (DatabaseConnectionException | ExpenseManagerException e) {
                         new AlertDialog.Builder(this.getActivity())
-                                .setTitle("Failed to Add Account")
+                                .setTitle("Failed to Add an Account")
                                 .setMessage(e.getMessage())
                                 .setNeutralButton(this.getString(R.string.msg_ok),
                                         new DialogInterface.OnClickListener() {

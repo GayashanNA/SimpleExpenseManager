@@ -111,6 +111,8 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper implements DatabaseH
 
     @Override
     public void addAccount(Account account) throws DatabaseConnectionException {
+
+
         ContentValues cv = new ContentValues(4);
         cv.put(COLUMN_ACCOUNT_NO, account.getAccountNo());
         cv.put(COLUMN_BANK_NAME, account.getBankName());
@@ -119,7 +121,7 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper implements DatabaseH
 
         long result = this.sqlDB.insert(TABLE_ACCOUNT,null,cv);
         if (result == -1)
-            throw new DatabaseConnectionException("Account insertion failed");
+            throw new DatabaseConnectionException("Account insertion to the database failed");
     }
 
     @Override
@@ -128,7 +130,7 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper implements DatabaseH
         long result = this.sqlDB.delete(TABLE_ACCOUNT,COLUMN_ACCOUNT_NO + " = ?", whereArgs);
 
         if (result == 0)
-            throw new DatabaseConnectionException("Deleting account failed");
+            throw new DatabaseConnectionException("Account deletion in the database failed");
     }
 
     @Override
@@ -143,7 +145,7 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper implements DatabaseH
 
         long result = this.sqlDB.update("account",cv,"account_no = ?",whereArgs);
         if (result == 0)
-            throw new DatabaseConnectionException("Updating account failed");
+            throw new DatabaseConnectionException("Updating the account in the database failed");
     }
 
     @Override
@@ -176,6 +178,6 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper implements DatabaseH
 
         long result = this.sqlDB.insert(TABLE_TRANSACTION_LOG,null, cv);
         if (result == -1)
-            throw new DatabaseConnectionException("Transaction insertion failed");
+            throw new DatabaseConnectionException("Transaction insertion to the database failed");
     }
 }
