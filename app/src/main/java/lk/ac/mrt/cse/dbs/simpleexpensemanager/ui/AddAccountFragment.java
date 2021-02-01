@@ -16,8 +16,10 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.ui;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -100,7 +102,16 @@ public class AddAccountFragment extends Fragment implements View.OnClickListener
                         currentExpenseManager.addAccount(accountNumStr, bankNameStr, accountHolderStr,
                                 Double.parseDouble(initialBalanceStr));
                     } catch (DatabaseConnectionException e) {
-                        e.printStackTrace();
+                        new AlertDialog.Builder(this.getActivity())
+                                .setTitle("Failed to Add Account")
+                                .setMessage(e.getMessage())
+                                .setNeutralButton(this.getString(R.string.msg_ok),
+                                        new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                dialog.cancel();
+                                            }
+                                        }).setIcon(android.R.drawable.ic_dialog_alert).show();
                     }
                 }
                 cleanUp();
