@@ -2,6 +2,7 @@ package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.impl;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteConstraintException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -85,7 +86,11 @@ public class PersistentAccountDAO extends SQLiteOpenHelper implements AccountDAO
 
         sqLiteDatabase = this.getWritableDatabase();
         double updatedBalance = expenseType==ExpenseType.EXPENSE ? currentBalance-amount: currentBalance+amount;
-        sqLiteDatabase.execSQL("UPDATE account SET balance = ? WHERE account_number = ?", new Object[]{updatedBalance, accountNo  });
+        try {
+            sqLiteDatabase.execSQL("UPDATE account SET balance = ? WHERE account_number = ?", new Object[]{updatedBalance, accountNo  });
+        }catch (SQLiteConstraintException ignored){
+            throw new InvalidAccountException("Account balance less than 0");
+        }
     }
 
     @Override

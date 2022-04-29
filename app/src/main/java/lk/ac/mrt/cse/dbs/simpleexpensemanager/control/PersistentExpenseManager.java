@@ -14,7 +14,7 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.ui.MainActivity;
 
 public class PersistentExpenseManager extends ExpenseManager{
     private final Context context;
-    private static final String DB_NAME = "expense_manager";
+    private static final String DB_NAME = "expense_manager_190241X";
     public PersistentExpenseManager(Context context) {
         this.context = context;
         setup();
