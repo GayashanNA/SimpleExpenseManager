@@ -88,4 +88,9 @@ public class InMemoryAccountDAO implements AccountDAO {
         }
         accounts.put(accountNo, account);
     }
+
+    @Override
+    public double getAccountBalance(String accountNo) {
+        return 0;
+    }
 }

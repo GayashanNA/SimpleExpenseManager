@@ -16,6 +16,10 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.control;
 
+import android.content.Context;
+import android.widget.Switch;
+import android.widget.Toast;
+
 import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
@@ -36,6 +40,7 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 public abstract class ExpenseManager implements Serializable {
     private AccountDAO accountsHolder;
     private TransactionDAO transactionsHolder;
+    private Context context;
 
     /***
      * Get list of account numbers as String.
@@ -65,8 +70,13 @@ public abstract class ExpenseManager implements Serializable {
 
         if (!amount.isEmpty()) {
             double amountVal = Double.parseDouble(amount);
-            transactionsHolder.logTransaction(transactionDate, accountNo, expenseType, amountVal);
-            accountsHolder.updateBalance(accountNo, expenseType, amountVal);
+            double balance = accountsHolder.getAccountBalance(accountNo);
+            if(expenseType == ExpenseType.EXPENSE && balance<amountVal){
+                Toast.makeText(context,"Not Enough Money: Balance: "+balance , Toast.LENGTH_SHORT).show();
+            }else {
+                transactionsHolder.logTransaction(transactionDate, accountNo, expenseType, amountVal);
+                accountsHolder.updateBalance(accountNo, expenseType, amountVal);
+            }
         }
     }
 
@@ -126,6 +136,10 @@ public abstract class ExpenseManager implements Serializable {
      */
     public void setTransactionsDAO(TransactionDAO transactionDAO) {
         this.transactionsHolder = transactionDAO;
+    }
+
+    public void setContext(Context context) {
+        this.context = context;
     }
 
     /***

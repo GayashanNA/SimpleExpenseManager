@@ -37,6 +37,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('C:\\Users\\kabil\\OneDrive\\Desktop\\Semester_4\\CS3042 - Database Systems\\MiniProject\\CS3042-SimpleExpenseManager\\app\\libs\\sqlite-jdbc-3.36.0.3.jar')
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support:design:26.1.0'
