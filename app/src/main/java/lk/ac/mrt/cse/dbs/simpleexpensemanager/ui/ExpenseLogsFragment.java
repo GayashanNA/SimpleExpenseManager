@@ -17,7 +17,6 @@
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.ui;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +33,9 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.ExpenseManager;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 
 import static lk.ac.mrt.cse.dbs.simpleexpensemanager.Constants.EXPENSE_MANAGER;
+
+import androidx.fragment.app.Fragment;
+
 /**
  *
  */
@@ -41,14 +43,15 @@ public class ExpenseLogsFragment extends Fragment {
     private ExpenseManager currentExpenseManager;
 
     public static ExpenseLogsFragment newInstance(ExpenseManager expenseManager) {
-        ExpenseLogsFragment expenseLogsFragment = new ExpenseLogsFragment();
-        Bundle args = new Bundle();
-        args.putSerializable(EXPENSE_MANAGER, expenseManager);
-        expenseLogsFragment.setArguments(args);
+        ExpenseLogsFragment expenseLogsFragment = new ExpenseLogsFragment(expenseManager);
+//        Bundle args = new Bundle();
+//        args.putSerializable(EXPENSE_MANAGER, expenseManager);
+//        expenseLogsFragment.setArguments(args);
         return expenseLogsFragment;
     }
 
-    public ExpenseLogsFragment() {
+    public ExpenseLogsFragment(ExpenseManager expenseManager) {
+        this.currentExpenseManager=expenseManager;
     }
 
     @Override
@@ -57,7 +60,7 @@ public class ExpenseLogsFragment extends Fragment {
         TableLayout logsTableLayout = (TableLayout) rootView.findViewById(R.id.logs_table);
         TableRow tableRowHeader = (TableRow) rootView.findViewById(R.id.logs_table_header);
 
-        currentExpenseManager = (ExpenseManager) getArguments().get(EXPENSE_MANAGER);
+//        currentExpenseManager = (ExpenseManager) getArguments().get(EXPENSE_MANAGER);
         List<Transaction> transactionList = new ArrayList<>();
         if (currentExpenseManager != null) {
             transactionList = currentExpenseManager.getTransactionLogs();

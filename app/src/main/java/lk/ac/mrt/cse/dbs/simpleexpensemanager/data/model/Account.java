@@ -16,13 +16,21 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model;
 
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 /**
  * This POJO holds the information about an account.
  */
+@Entity(tableName = "account")
 public class Account {
+    @PrimaryKey @NonNull
     private String accountNo;
     private String bankName;
     private String accountHolderName;
+    @ColumnInfo(name = "balance")
     private double balance;
 
     public String getAccountNo() {

@@ -16,20 +16,45 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.util.Date;
 
 /**
  * This POJO holds the information regarding a single transaction.
  */
+@Entity(tableName = "transaction")
 public class Transaction {
-    private Date date;
+    public int year, month, date;
+    @PrimaryKey@NonNull
+    public String trans_no;
+    //private Date date;
+
+    private String accountNo;
+    private ExpenseType expenseType;
+    private double amount;
+
+    public Transaction(String trans_no,int year, int month, int date, String accountNo,
+                       ExpenseType expenseType, double amount) {
+        this.trans_no=trans_no;
+        this.year=year;
+        this.month=month;
+        this.date=date;
+        this.accountNo = accountNo;
+        this.expenseType = expenseType;
+        this.amount = amount;
+    }
 
     public Date getDate() {
-        return date;
+        return new Date(year,  month,  date);
     }
 
     public void setDate(Date date) {
-        this.date = date;
+        this.year = date.getYear();
+        month=date.getMonth();
+        this.date=date.getDate();
     }
 
     public String getAccountNo() {
@@ -56,15 +81,5 @@ public class Transaction {
         this.amount = amount;
     }
 
-    private String accountNo;
-    private ExpenseType expenseType;
-    private double amount;
 
-    public Transaction(Date date, String accountNo,
-                       ExpenseType expenseType, double amount) {
-        this.date = date;
-        this.accountNo = accountNo;
-        this.expenseType = expenseType;
-        this.amount = amount;
-    }
 }

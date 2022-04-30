@@ -16,15 +16,18 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data;
 
-import java.util.Date;
+import androidx.room.Dao;
+import androidx.room.Insert;
+import androidx.room.Query;
+
 import java.util.List;
 
-import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 
 /**
  * TransactionDAO interface can be used to access the log of transactions requested by the user.
  */
+@Dao
 public interface TransactionDAO {
 
     /***
@@ -35,14 +38,16 @@ public interface TransactionDAO {
      * @param expenseType - type of the expense
      * @param amount      - amount involved
      */
-    public void logTransaction(Date date, String accountNo, ExpenseType expenseType, double amount);
+    @Insert
+    void logTransaction(Transaction transaction);
 
     /***
      * Return all the transactions logged.
      *
      * @return - a list of all the transactions
      */
-    public List<Transaction> getAllTransactionLogs();
+    @Query("select * from `transaction`")
+    List<Transaction> getAllTransactionLogs();
 
     /***
      * Return a limited amount of transactions logged.
@@ -50,5 +55,6 @@ public interface TransactionDAO {
      * @param limit - number of transactions to be returned
      * @return - a list of requested number of transactions
      */
-    public List<Transaction> getPaginatedTransactionLogs(int limit);
+    @Query("select * from `transaction` limit :limit")
+    List<Transaction> getPaginatedTransactionLogs(int limit);
 }

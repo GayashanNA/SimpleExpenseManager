@@ -1,0 +1,96 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright 2015 Department of Computer Science and Engineering, University of Moratuwa.
+4  ~ Licensed under the Apache License, Version 2.0 (the "License");
+5  ~ you may not use this file except in compliance with the License.
+6  ~ You may obtain a copy of the License at
+7  ~
+8  ~                  http://www.apache.org/licenses/LICENSE-2.0
+9  ~
+10  ~ Unless required by applicable law or agreed to in writing, software
+11  ~ distributed under the License is distributed on an "AS IS" BASIS,
+12  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+13  ~ See the License for the specific language governing permissions and
+14  ~ limitations under the License.
+15  ~
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="lk.ac.mrt.cse.dbs.simpleexpensemanager"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="19"
+23-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+24        android:targetSdkVersion="31" />
+24-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+25
+26    <application
+26-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:21:5-37:19
+27        android:allowBackup="true"
+27-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:22:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.7.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\9b4bbe17406ebdd5cecd894aeda4ed80\core-1.7.0\AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher"
+30-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:23:9-43
+31        android:label="@string/app_name"
+31-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:24:9-41
+32        android:supportsRtl="true"
+32-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:25:9-35
+33        android:testOnly="true"
+34        android:theme="@style/AppTheme" >
+34-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:26:9-40
+35        <activity
+35-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:27:9-36:20
+36            android:name="lk.ac.mrt.cse.dbs.simpleexpensemanager.ui.MainActivity"
+36-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:28:13-44
+37            android:label="@string/app_name"
+37-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:29:13-45
+38            android:theme="@style/AppTheme.NoActionBar" >
+38-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:30:13-56
+39            <intent-filter>
+39-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:31:13-35:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:17-68
+40-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:34:17-76
+42-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:34:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <service
+46-->[androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
+47            android:name="androidx.room.MultiInstanceInvalidationService"
+47-->[androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
+48            android:directBootAware="true"
+48-->[androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
+49            android:exported="false" />
+49-->[androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
+50
+51        <provider
+51-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+53            android:authorities="lk.ac.mrt.cse.dbs.simpleexpensemanager.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+61        </provider>
+62    </application>
+63
+64</manifest>

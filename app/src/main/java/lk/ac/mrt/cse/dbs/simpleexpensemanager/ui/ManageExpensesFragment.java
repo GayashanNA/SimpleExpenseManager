@@ -16,10 +16,11 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.ui;
 
+import static lk.ac.mrt.cse.dbs.simpleexpensemanager.Constants.EXPENSE_MANAGER;
+
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AlertDialog;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,12 +32,14 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.Fragment;
+
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.R;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.ExpenseManager;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 
-import static lk.ac.mrt.cse.dbs.simpleexpensemanager.Constants.EXPENSE_MANAGER;
 /**
  *
  */
@@ -49,14 +52,16 @@ public class ManageExpensesFragment extends Fragment implements View.OnClickList
     private ExpenseManager currentExpenseManager;
 
     public static ManageExpensesFragment newInstance(ExpenseManager expenseManager) {
-        ManageExpensesFragment manageExpensesFragment = new ManageExpensesFragment();
-        Bundle args = new Bundle();
-        args.putSerializable(EXPENSE_MANAGER, expenseManager);
-        manageExpensesFragment.setArguments(args);
+        ManageExpensesFragment manageExpensesFragment = new ManageExpensesFragment(expenseManager);
+        //Bundle args = new Bundle();
+        //args.putSerializable(EXPENSE_MANAGER, expenseManager);
+        //manageExpensesFragment.setArguments(args);
+
         return manageExpensesFragment;
     }
 
-    public ManageExpensesFragment() {
+    public ManageExpensesFragment(ExpenseManager expenseManager) {
+        this.currentExpenseManager=expenseManager;
     }
 
     @Override
@@ -67,7 +72,7 @@ public class ManageExpensesFragment extends Fragment implements View.OnClickList
 
         amount = (EditText) rootView.findViewById(R.id.amount);
         accountSelector = (Spinner) rootView.findViewById(R.id.account_selector);
-        currentExpenseManager = (ExpenseManager) getArguments().get(EXPENSE_MANAGER);
+        //currentExpenseManager = (ExpenseManager) getArguments().get(EXPENSE_MANAGER);
         ArrayAdapter<String> adapter =
                 null;
         if (currentExpenseManager != null) {

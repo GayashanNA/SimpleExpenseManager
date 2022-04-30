@@ -16,5 +16,5 @@
   -->
 
 <resources>
-    <string name="config_date_log_pattern">dd-MM-yyyy</string>
+    <string name="config_date_log_pattern">dd-MM-yy</string>
 </resources>

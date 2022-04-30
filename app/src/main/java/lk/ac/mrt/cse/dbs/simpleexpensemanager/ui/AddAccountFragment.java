@@ -17,7 +17,10 @@
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.ui;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+
+import androidx.fragment.app.Fragment;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +35,7 @@ import static lk.ac.mrt.cse.dbs.simpleexpensemanager.Constants.EXPENSE_MANAGER;
  *
  */
 public class AddAccountFragment extends Fragment implements View.OnClickListener {
+    private static final String TAG = "AddAccountFragment";
     private ExpenseManager currentExpenseManager;
     private EditText accountNumber;
     private EditText bankName;
@@ -40,14 +44,15 @@ public class AddAccountFragment extends Fragment implements View.OnClickListener
     private Button addAccount;
 
     public static AddAccountFragment newInstance(ExpenseManager expenseManager) {
-        AddAccountFragment addAccountFragment = new AddAccountFragment();
-        Bundle args = new Bundle();
-        args.putSerializable(EXPENSE_MANAGER, expenseManager);
-        addAccountFragment.setArguments(args);
-        return addAccountFragment;
+        AddAccountFragment addAccountFragment = new AddAccountFragment(expenseManager);
+//        Bundle args = new Bundle();
+//        args.putSerializable(EXPENSE_MANAGER, expenseManager);
+//        addAccountFragment.setArguments(args);
+       return addAccountFragment;
     }
 
-    public AddAccountFragment() {
+    public AddAccountFragment(ExpenseManager expenseManager) {
+        this.currentExpenseManager=expenseManager;
     }
 
     @Override
@@ -60,7 +65,7 @@ public class AddAccountFragment extends Fragment implements View.OnClickListener
         addAccount = (Button) rootView.findViewById(R.id.add_account);
         addAccount.setOnClickListener(this);
 
-        currentExpenseManager = (ExpenseManager) getArguments().get(EXPENSE_MANAGER);
+       // currentExpenseManager = (ExpenseManager) getArguments().get(EXPENSE_MANAGER);
         return rootView;
     }
 
@@ -95,6 +100,7 @@ public class AddAccountFragment extends Fragment implements View.OnClickListener
                 }
 
                 if (currentExpenseManager != null) {
+                    Log.e(TAG, "onClick: ");
                     currentExpenseManager.addAccount(accountNumStr, bankNameStr, accountHolderStr,
                             Double.parseDouble(initialBalanceStr));
                 }
