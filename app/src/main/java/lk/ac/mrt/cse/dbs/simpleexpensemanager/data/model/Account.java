@@ -25,6 +25,13 @@ public class Account {
     private String accountHolderName;
     private double balance;
 
+    public Account(String accountNo, String bankName, String accountHolderName, double balance) {
+        this.accountNo = accountNo;
+        this.bankName = bankName;
+        this.accountHolderName = accountHolderName;
+        this.balance = balance;
+    }
+
     public String getAccountNo() {
         return accountNo;
     }
@@ -54,13 +61,6 @@ public class Account {
     }
 
     public void setBalance(double balance) {
-        this.balance = balance;
-    }
-
-    public Account(String accountNo, String bankName, String accountHolderName, double balance) {
-        this.accountNo = accountNo;
-        this.bankName = bankName;
-        this.accountHolderName = accountHolderName;
         this.balance = balance;
     }
 }
