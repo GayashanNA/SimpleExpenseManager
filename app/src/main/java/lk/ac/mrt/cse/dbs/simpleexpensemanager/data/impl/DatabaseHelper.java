@@ -41,16 +41,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        Log.d("mydebug", "IN DBH CLASS!");
         String createAccountTableStatement = "CREATE TABLE " + ACCOUNT_TABLE + "(" +
                 COLUMN_ACCOUNT_NO + " TEXT PRIMARY KEY, " + COLUMN_BANK_NAME +
                 " TEXT NOT NULL, " + COLUMN_HOLDER_NAME + " TEXT NOT NULL, " +
                 COLUMN_BALANCE + " REAL DEFAULT 0)";
 
-        String createTransactionTableStatement ="CREATE TABLE " + TRANSACTION_TABLE + "(" + COLUMN_TRANSACTION_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_DATE + " TEXT NOT NULL, " + COLUMN_ACCOUNT_NO + " TEXT NOT NULL, " + COLUMN_TYPE + " INTEGER NOT NULL, " + COLUMN_AMOUNT + " REAL NOT NULL, " + "FOREIGN KEY (" + COLUMN_ACCOUNT_NO + ") REFERENCES account(" + COLUMN_ACCOUNT_NO + "))";
+        String createTransactionTableStatement ="CREATE TABLE " + TRANSACTION_TABLE +
+                "(" + COLUMN_TRANSACTION_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                COLUMN_DATE + " TEXT NOT NULL, " + COLUMN_ACCOUNT_NO + " TEXT NOT NULL, " + COLUMN_TYPE +
+                " INTEGER NOT NULL, " + COLUMN_AMOUNT + " REAL NOT NULL, " + "FOREIGN KEY (" + COLUMN_ACCOUNT_NO +
+                ") REFERENCES account(" + COLUMN_ACCOUNT_NO + "))";
+
         sqLiteDatabase.execSQL( createAccountTableStatement );
         sqLiteDatabase.execSQL( createTransactionTableStatement );
-        Log.d("mydebug123", "OnCreate called!");
     }
 
     @Override
@@ -73,13 +76,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         cv.put(COLUMN_BALANCE, account.getBalance());
 
         long insert = db.insert(ACCOUNT_TABLE, null, cv);
-        Log.d("mydebug123", "Result of addAcount() " + insert);
         db.close();
-        if(insert == -1) return false;
-        else return true;
+        return insert != -1;
     }
 
-    public List<Account> getAllAcoounts() {
+    public List<Account> getAllAccounts() {
 
         List<Account> allAccounts = new ArrayList<>();
 
@@ -95,16 +96,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 String holder = cursor.getString(2);
                 double balance = cursor.getDouble(3);
 
-                Log.d("mydebug123", "getting all accounts " + accNo);
-
                 Account acc = new Account(accNo, bank, holder, balance);
                 allAccounts.add(acc);
-
             } while (cursor.moveToNext());
-        } else {
-            Log.d("mydebug123", "NO results fetched from getAllAcoounts() method");
         }
-
         cursor.close();
         db.close();
         return allAccounts;
@@ -120,8 +115,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             String res_holder = cursor.getString(2);
             double res_balance = cursor.getDouble(3);
 
-            Log.d("mydebug123", "Getting one account " + accNo);
-
             Account result_account = new Account(res_accNo, res_bank, res_holder, res_balance);
 
             cursor.close();
@@ -136,19 +129,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public boolean removeAccount(String accountNo) {
         SQLiteDatabase db = this.getWritableDatabase();
         int deletedRows = db.delete(ACCOUNT_TABLE, COLUMN_ACCOUNT_NO + " = ?", new String[]{accountNo});
-        Log.d("mydebug123", "result of removeAccount() " + deletedRows);
-
         db.close();
-        if(deletedRows == 0) return false;
-        else return true;
+        return deletedRows != 0;
     }
 
     public boolean updateBalance(String accountNo, ExpenseType expenseType, double amount) {
 
         ContentValues cv = new ContentValues();
         Account acc = getAccount(accountNo);
-        if (acc ==null) {
-            Log.d("mydebug123", "Returned acc is NULL!");
+        if (acc == null) {
             return false;
         }
 
@@ -163,11 +152,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         int updatedRows = db.update(ACCOUNT_TABLE, cv, COLUMN_ACCOUNT_NO + " = ?",
                 new String[]{accountNo});
-        Log.d("mydebug123", "result of updateBalance() " + updatedRows);
-
         db.close();
-        if(updatedRows == 0) return false;
-        else return true;
+        return updatedRows != 0;
     }
 
     public boolean logTransaction(Date date, String accountNo, ExpenseType expenseType, double amount) {
@@ -184,7 +170,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         cv.put(COLUMN_AMOUNT, amount);
 
         long insert = db.insert(TRANSACTION_TABLE, null, cv);
-        Log.d("mydebug123", "Result of logTransaction() " + insert);
 
         db.close();
         if(insert == -1) return false;
@@ -206,8 +191,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 ExpenseType expenseType = cursor.getInt(3) == 0 ? EXPENSE : INCOME;
                 double amount = cursor.getDouble(4);
 
-                Log.d("mydebug123", "getting all transactions " + cursor.getInt(0));
-
                 SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
                 try {
                     Date date = formatter.parse(strDate);
@@ -215,14 +198,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     allTransactions.add(transaction);
                 } catch (ParseException e) {
                     e.printStackTrace();
-                    Log.d("mydebug123", "Error when converting strDate to Date " + cursor.getInt(0));
                 }
 
             } while (cursor.moveToNext());
-        } else {
-            Log.d("mydebug123", "NO results fetched from getAllTransactionLogs() method");
         }
-
         cursor.close();
         db.close();
         return allTransactions;

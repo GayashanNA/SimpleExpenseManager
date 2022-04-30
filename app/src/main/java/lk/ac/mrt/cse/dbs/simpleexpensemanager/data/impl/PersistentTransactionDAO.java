@@ -20,8 +20,6 @@ public class PersistentTransactionDAO implements TransactionDAO {
     @Override
     public void logTransaction(Date date, String accountNo, ExpenseType expenseType, double amount) {
         boolean result = databaseHelper.logTransaction(date, accountNo, expenseType, amount);
-        if (result) Log.d("mydebug123", "LOG added!");
-        else Log.d("mydebug123", "LOG couldn't be added!");
     }
 
     @Override
