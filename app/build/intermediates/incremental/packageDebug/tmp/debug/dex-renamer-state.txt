@@ -1,4 +1,4 @@
-#Sun May 01 17:33:23 IST 2022
+#Mon May 02 00:13:59 IST 2022
 base.0=/home/jananga/Desktop/DB_Mini_Project/Try3/SimpleExpenseManager/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
