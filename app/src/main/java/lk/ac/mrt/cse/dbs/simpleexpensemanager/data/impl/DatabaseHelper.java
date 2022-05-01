@@ -18,7 +18,7 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     public DatabaseHelper(Context context){
-        super(context, "ExpenseManager.db", null, 1);
+        super(context, "190292D.db", null, 1);
     }
 
     @Override
