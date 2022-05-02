@@ -20,7 +20,7 @@ public class PersistentExpenseManager extends  ExpenseManager{
 
     @Override
     public void setup() {
-        /*** Begin generating dummy data for In-Memory implementation ***/
+        /*** Begin generating initiating TransactionDAO and AccountDAO objects for the persistent implementation ***/
 
         DatabaseHelper databaseHelper = new DatabaseHelper(this.context);
 

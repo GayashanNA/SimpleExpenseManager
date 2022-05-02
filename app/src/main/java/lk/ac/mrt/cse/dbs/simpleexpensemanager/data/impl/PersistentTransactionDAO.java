@@ -8,6 +8,10 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.TransactionDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 
+/**
+ * This is a persistent implementation of TransactionDAO interface. All the
+ * transaction logs are stored in a sqlite database.
+ */
 public class PersistentTransactionDAO implements TransactionDAO {
 
     private DatabaseHelper dbHelper;

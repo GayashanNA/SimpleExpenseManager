@@ -8,6 +8,10 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountExcep
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 
+/**
+ * This is a persistent implementation of the AccountDAO interface. A sqlite database is
+ * used to store the account details persistently.
+ */
 public class PersistentAccountDAO implements AccountDAO {
 
     private DatabaseHelper dbHelper;

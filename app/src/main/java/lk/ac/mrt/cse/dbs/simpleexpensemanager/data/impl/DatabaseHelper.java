@@ -11,12 +11,16 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
+    /***
+     * Setting database details.
+     */
     public DatabaseHelper(Context context){
         super(context, "190292D.db", null, 1);
     }
@@ -39,7 +43,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "foreign key(accountNo) references account(accountNo)"+
                 ")";
 
+
+        /***
+         * creates the table for accounts.
+         */
         sqLiteDatabase.execSQL(createAccountTable);
+
+        /***
+         * creates the table for transactions.
+         */
         sqLiteDatabase.execSQL(createTransactionTable);
 
     }
@@ -51,7 +63,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 
-
+    /***
+     * Get a list of accounts.
+     *
+     * @return - list of Account objects.
+     */
     public List<Account> getAccounts(){
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
         Cursor cursorAccounts = sqLiteDatabase.rawQuery("select * from account", null);
@@ -65,6 +81,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return accounts;
     }
 
+    /***
+     * Get a list of transactions.
+     *
+     * @return - list of Transaction objects.
+     */
     public List<Transaction> getTransactions(){
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
         Cursor cursorTransactions = sqLiteDatabase.rawQuery("select * from transactionLog", null);
@@ -87,6 +108,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
+    /***
+     * Add an account to the accounts collection.
+     *
+     * @param account - the account to be added.
+     */
     public void addAccount(Account account){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -98,6 +124,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         sqLiteDatabase.close();
     }
 
+    /***
+     * Add a transaction to the transactions collection.
+     *
+     * @param transaction - the transaction to be added.
+     */
     public void addTransaction(Transaction transaction){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -109,12 +140,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         sqLiteDatabase.close();
     }
 
+    /***
+     * Remove an account from the accounts collection.
+     *
+     * @param accountNo - of the account to be removed.
+     * @throws InvalidAccountException - if the account number is invalid
+     */
     public void removeAccount(String accountNo){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         sqLiteDatabase.delete("account","accountNo=?",new String[]{accountNo});
         sqLiteDatabase.close();
     }
 
+    /***
+     * Update the given account.
+     *
+     * @param account - the account that has updated data.
+     */
     public void updateAccount(Account account) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
