@@ -1,0 +1,168 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:1-39:12
+INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:1-39:12
+INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:1-39:12
+INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:1-39:12
+MERGED from [com.android.support:design:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d1d1709d55c8ab5fa359ce49bd908eb5\design-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\22201284f06052f57e5af9bcb65a52a3\appcompat-v7-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\a3be39181733312b7186ee91d3891a94\animated-vector-drawable-26.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cfb783c1cb9f854594812508a5068e75\support-vector-drawable-26.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bfc5a5c827e42124e64711f1f1ad1a7a\recyclerview-v7-26.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\68c376eada2cf7468ca4badd967587af\transition-26.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\9739e7ca4ab4f8014ba0074b1a61344d\support-v4-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d077425ebc7d279b27502cf2b2becb72\support-media-compat-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bc30539c385336b5a64b604a81f4c176\support-fragment-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\6601757371bd8d89f3aec73abefad9d7\support-core-utils-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cf8bbde758eab05c95428ec263cd06bc\support-core-ui-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\45642fd0a6138345441bf0a6b6a7b84e\support-compat-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\940f5e7524450f821fdfed84e74cdc3a\runtime-1.0.0\AndroidManifest.xml:17:1-30:12
+INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:1-39:12
+INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:1-39:12
+INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:1-39:12
+	package
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:19:11-59
+		INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:1-39:12
+		INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:1-39:12
+		INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:11-69
+application
+ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:21:5-37:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d1d1709d55c8ab5fa359ce49bd908eb5\design-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d1d1709d55c8ab5fa359ce49bd908eb5\design-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\22201284f06052f57e5af9bcb65a52a3\appcompat-v7-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\22201284f06052f57e5af9bcb65a52a3\appcompat-v7-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\a3be39181733312b7186ee91d3891a94\animated-vector-drawable-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\a3be39181733312b7186ee91d3891a94\animated-vector-drawable-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cfb783c1cb9f854594812508a5068e75\support-vector-drawable-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cfb783c1cb9f854594812508a5068e75\support-vector-drawable-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bfc5a5c827e42124e64711f1f1ad1a7a\recyclerview-v7-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bfc5a5c827e42124e64711f1f1ad1a7a\recyclerview-v7-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\68c376eada2cf7468ca4badd967587af\transition-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\68c376eada2cf7468ca4badd967587af\transition-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\9739e7ca4ab4f8014ba0074b1a61344d\support-v4-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\9739e7ca4ab4f8014ba0074b1a61344d\support-v4-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d077425ebc7d279b27502cf2b2becb72\support-media-compat-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d077425ebc7d279b27502cf2b2becb72\support-media-compat-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bc30539c385336b5a64b604a81f4c176\support-fragment-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bc30539c385336b5a64b604a81f4c176\support-fragment-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\6601757371bd8d89f3aec73abefad9d7\support-core-utils-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\6601757371bd8d89f3aec73abefad9d7\support-core-utils-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cf8bbde758eab05c95428ec263cd06bc\support-core-ui-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cf8bbde758eab05c95428ec263cd06bc\support-core-ui-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\45642fd0a6138345441bf0a6b6a7b84e\support-compat-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\45642fd0a6138345441bf0a6b6a7b84e\support-compat-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\940f5e7524450f821fdfed84e74cdc3a\runtime-1.0.0\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\940f5e7524450f821fdfed84e74cdc3a\runtime-1.0.0\AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:25:9-35
+	android:label
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:24:9-41
+	android:icon
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:23:9-43
+	android:allowBackup
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:22:9-35
+	android:theme
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:26:9-40
+activity#lk.ac.mrt.cse.dbs.simpleexpensemanager.ui.MainActivity
+ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:27:9-36:20
+	android:label
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:29:13-45
+	android:theme
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:30:13-56
+	android:name
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:28:13-44
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:31:13-35:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:17-68
+	android:name
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:34:17-76
+	android:name
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:34:27-74
+uses-sdk
+INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d1d1709d55c8ab5fa359ce49bd908eb5\design-26.1.0\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d1d1709d55c8ab5fa359ce49bd908eb5\design-26.1.0\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\22201284f06052f57e5af9bcb65a52a3\appcompat-v7-26.1.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\22201284f06052f57e5af9bcb65a52a3\appcompat-v7-26.1.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\a3be39181733312b7186ee91d3891a94\animated-vector-drawable-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\a3be39181733312b7186ee91d3891a94\animated-vector-drawable-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cfb783c1cb9f854594812508a5068e75\support-vector-drawable-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cfb783c1cb9f854594812508a5068e75\support-vector-drawable-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bfc5a5c827e42124e64711f1f1ad1a7a\recyclerview-v7-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bfc5a5c827e42124e64711f1f1ad1a7a\recyclerview-v7-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\68c376eada2cf7468ca4badd967587af\transition-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\68c376eada2cf7468ca4badd967587af\transition-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\9739e7ca4ab4f8014ba0074b1a61344d\support-v4-26.1.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\9739e7ca4ab4f8014ba0074b1a61344d\support-v4-26.1.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d077425ebc7d279b27502cf2b2becb72\support-media-compat-26.1.0\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d077425ebc7d279b27502cf2b2becb72\support-media-compat-26.1.0\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bc30539c385336b5a64b604a81f4c176\support-fragment-26.1.0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bc30539c385336b5a64b604a81f4c176\support-fragment-26.1.0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\6601757371bd8d89f3aec73abefad9d7\support-core-utils-26.1.0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\6601757371bd8d89f3aec73abefad9d7\support-core-utils-26.1.0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cf8bbde758eab05c95428ec263cd06bc\support-core-ui-26.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cf8bbde758eab05c95428ec263cd06bc\support-core-ui-26.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\45642fd0a6138345441bf0a6b6a7b84e\support-compat-26.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\45642fd0a6138345441bf0a6b6a7b84e\support-compat-26.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\940f5e7524450f821fdfed84e74cdc3a\runtime-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\940f5e7524450f821fdfed84e74cdc3a\runtime-1.0.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d1d1709d55c8ab5fa359ce49bd908eb5\design-26.1.0\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d1d1709d55c8ab5fa359ce49bd908eb5\design-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\22201284f06052f57e5af9bcb65a52a3\appcompat-v7-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\22201284f06052f57e5af9bcb65a52a3\appcompat-v7-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\a3be39181733312b7186ee91d3891a94\animated-vector-drawable-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\a3be39181733312b7186ee91d3891a94\animated-vector-drawable-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cfb783c1cb9f854594812508a5068e75\support-vector-drawable-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cfb783c1cb9f854594812508a5068e75\support-vector-drawable-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bfc5a5c827e42124e64711f1f1ad1a7a\recyclerview-v7-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bfc5a5c827e42124e64711f1f1ad1a7a\recyclerview-v7-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\68c376eada2cf7468ca4badd967587af\transition-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\68c376eada2cf7468ca4badd967587af\transition-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\9739e7ca4ab4f8014ba0074b1a61344d\support-v4-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\9739e7ca4ab4f8014ba0074b1a61344d\support-v4-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d077425ebc7d279b27502cf2b2becb72\support-media-compat-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d077425ebc7d279b27502cf2b2becb72\support-media-compat-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bc30539c385336b5a64b604a81f4c176\support-fragment-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\bc30539c385336b5a64b604a81f4c176\support-fragment-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\6601757371bd8d89f3aec73abefad9d7\support-core-utils-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\6601757371bd8d89f3aec73abefad9d7\support-core-utils-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cf8bbde758eab05c95428ec263cd06bc\support-core-ui-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\cf8bbde758eab05c95428ec263cd06bc\support-core-ui-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\45642fd0a6138345441bf0a6b6a7b84e\support-compat-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\45642fd0a6138345441bf0a6b6a7b84e\support-compat-26.1.0\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d1d1709d55c8ab5fa359ce49bd908eb5\design-26.1.0\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d1d1709d55c8ab5fa359ce49bd908eb5\design-26.1.0\AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\940f5e7524450f821fdfed84e74cdc3a\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\940f5e7524450f821fdfed84e74cdc3a\runtime-1.0.0\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\940f5e7524450f821fdfed84e74cdc3a\runtime-1.0.0\AndroidManifest.xml:26:13-58

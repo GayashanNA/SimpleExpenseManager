@@ -1,0 +1,76 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright 2015 Department of Computer Science and Engineering, University of Moratuwa.
+4  ~ Licensed under the Apache License, Version 2.0 (the "License");
+5  ~ you may not use this file except in compliance with the License.
+6  ~ You may obtain a copy of the License at
+7  ~
+8  ~                  http://www.apache.org/licenses/LICENSE-2.0
+9  ~
+10  ~ Unless required by applicable law or agreed to in writing, software
+11  ~ distributed under the License is distributed on an "AS IS" BASIS,
+12  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+13  ~ See the License for the specific language governing permissions and
+14  ~ limitations under the License.
+15  ~
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="lk.ac.mrt.cse.dbs.simpleexpensemanager"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="19"
+23-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+24        android:targetSdkVersion="26" />
+24-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+25
+26    <application
+26-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:21:5-37:19
+27        android:allowBackup="true"
+27-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:22:9-35
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:23:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:24:9-41
+31        android:supportsRtl="true"
+31-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:25:9-35
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme" >
+33-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:26:9-40
+34        <activity
+34-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:27:9-36:20
+35            android:name="lk.ac.mrt.cse.dbs.simpleexpensemanager.ui.MainActivity"
+35-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:28:13-44
+36            android:label="@string/app_name"
+36-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:29:13-45
+37            android:theme="@style/AppTheme.NoActionBar" >
+37-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:30:13-56
+38            <intent-filter>
+38-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:31:13-35:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:17-68
+39-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:34:17-76
+41-->C:\Users\sivak\Desktop\SimpleExpenseManager\app\src\main\AndroidManifest.xml:34:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <meta-data
+45-->[com.android.support:design:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d1d1709d55c8ab5fa359ce49bd908eb5\design-26.1.0\AndroidManifest.xml:26:9-28:38
+46            android:name="android.support.VERSION"
+46-->[com.android.support:design:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d1d1709d55c8ab5fa359ce49bd908eb5\design-26.1.0\AndroidManifest.xml:27:13-51
+47            android:value="26.1.0" />
+47-->[com.android.support:design:26.1.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\d1d1709d55c8ab5fa359ce49bd908eb5\design-26.1.0\AndroidManifest.xml:28:13-35
+48        <meta-data
+48-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\940f5e7524450f821fdfed84e74cdc3a\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
+49            android:name="android.arch.lifecycle.VERSION"
+49-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\940f5e7524450f821fdfed84e74cdc3a\runtime-1.0.0\AndroidManifest.xml:26:13-58
+50            android:value="27.0.0-SNAPSHOT" />
+50-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\sivak\.gradle\caches\transforms-2\files-2.1\940f5e7524450f821fdfed84e74cdc3a\runtime-1.0.0\AndroidManifest.xml:27:13-44
+51    </application>
+52
+53</manifest>

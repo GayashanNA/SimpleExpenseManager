@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_add_account.xml.flat",
+        "source": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\src\\main\\res\\layout\\fragment_add_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_manage_expenses.xml.flat",
+        "source": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\src\\main\\res\\layout\\fragment_manage_expenses.xml"
+    },
+    {
+        "merged": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_expense_logs.xml.flat",
+        "source": "C:\\Users\\sivak\\Desktop\\SimpleExpenseManager\\app\\src\\main\\res\\layout\\fragment_expense_logs.xml"
+    }
+]

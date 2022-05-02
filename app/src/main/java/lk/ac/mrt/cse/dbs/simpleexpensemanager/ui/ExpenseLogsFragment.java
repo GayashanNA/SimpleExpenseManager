@@ -25,6 +25,7 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -60,7 +61,11 @@ public class ExpenseLogsFragment extends Fragment {
         currentExpenseManager = (ExpenseManager) getArguments().get(EXPENSE_MANAGER);
         List<Transaction> transactionList = new ArrayList<>();
         if (currentExpenseManager != null) {
-            transactionList = currentExpenseManager.getTransactionLogs();
+            try {
+                transactionList = currentExpenseManager.getTransactionLogs();
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
         }
         generateTransactionsTable(rootView, logsTableLayout, transactionList);
         return rootView;
