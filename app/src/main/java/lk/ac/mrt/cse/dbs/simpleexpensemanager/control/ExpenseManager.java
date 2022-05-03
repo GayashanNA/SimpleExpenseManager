@@ -16,6 +16,8 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.control;
 
+import android.content.Context;
+
 import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
@@ -133,4 +135,5 @@ public abstract class ExpenseManager implements Serializable {
      * objects will be initialized.
      */
     public abstract void setup() throws ExpenseManagerException;
+    public abstract void setup(Context context) throws ExpenseManagerException;
 }
