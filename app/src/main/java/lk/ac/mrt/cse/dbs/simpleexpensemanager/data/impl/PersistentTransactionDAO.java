@@ -102,20 +102,23 @@ public class PersistentTransactionDAO implements TransactionDAO {
     public List<Transaction> getPaginatedTransactionLogs(int limit) {
         List<Transaction> res = new LinkedList<>();
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM Log ORDER BY logID ASC LIMIT ?",new String[]{String.valueOf(limit)});
-        while (cursor.moveToNext()){
-            ExpenseType expenseType = INCOME;
-            if(cursor.getInt(3)==1){
-                expenseType = EXPENSE;
-            }
-            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-            Date date=new Date();
-            try {
-                date=  dateFormat.parse(cursor.getString(1));
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-            res.add(new Transaction(date,cursor.getString(2),expenseType,cursor.getDouble(4)));
+        Cursor cursor = db.rawQuery("SELECT * FROM Log ORDER BY logID DESC LIMIT ?",new String[]{String.valueOf(limit)});
+        if(cursor.moveToLast()){
+            do{
+                ExpenseType expenseType = INCOME;
+                if(cursor.getInt(3)==1){
+                    expenseType = EXPENSE;
+                }
+                SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+                Date date=new Date();
+                try {
+                    date=  dateFormat.parse(cursor.getString(1));
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+                res.add(new Transaction(date,cursor.getString(2),expenseType,cursor.getDouble(4)));
+            }while (cursor.moveToPrevious());
+
         }
         cursor.close();
         return res;
