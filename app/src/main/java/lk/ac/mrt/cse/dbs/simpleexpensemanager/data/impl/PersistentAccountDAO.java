@@ -75,21 +75,25 @@ public class PersistentAccountDAO extends SQLiteOpenHelper implements AccountDAO
     public void updateBalance(String accountNo, ExpenseType expenseType, double amount) throws InvalidAccountException {
         double currentBalance ;
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("SELECT balance FROM account WHERE account_number = ?", new String[]{accountNo});
-        if( cursor.moveToFirst()){
-            currentBalance = (double) cursor.getFloat(0);
+        try{
+            Cursor cursor = sqLiteDatabase.rawQuery("SELECT balance FROM account WHERE account_number = ?", new String[]{accountNo});
+            if( cursor.moveToFirst()){
+                currentBalance = (double) cursor.getFloat(0);
+            }
+            else {
+                throw new InvalidAccountException("Account not found");
+            }
+            cursor.close();
+        }catch (Exception e){
+            throw new InvalidAccountException("No Account Selected");
         }
-        else {
-            throw new InvalidAccountException("Account no found");
-        }
-        cursor.close();
 
         sqLiteDatabase = this.getWritableDatabase();
         double updatedBalance = expenseType==ExpenseType.EXPENSE ? currentBalance-amount: currentBalance+amount;
         try {
             sqLiteDatabase.execSQL("UPDATE account SET balance = ? WHERE account_number = ?", new Object[]{updatedBalance, accountNo  });
         }catch (SQLiteConstraintException ignored){
-            throw new InvalidAccountException("Account balance less than 0");
+            throw new InvalidAccountException("Account balance will be less than 0");
         }
     }
 
