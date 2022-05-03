@@ -29,6 +29,7 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
  * transaction logs are stored in a LinkedList in memory.
  */
 public class InMemoryTransactionDAO implements TransactionDAO {
+
     private final List<Transaction> transactions;
 
     public InMemoryTransactionDAO() {
@@ -36,9 +37,10 @@ public class InMemoryTransactionDAO implements TransactionDAO {
     }
 
     @Override
-    public void logTransaction(Date date, String accountNo, ExpenseType expenseType, double amount) {
+    public boolean logTransaction(Date date, String accountNo, ExpenseType expenseType, double amount) {
         Transaction transaction = new Transaction(date, accountNo, expenseType, amount);
         transactions.add(transaction);
+        return false;
     }
 
     @Override
