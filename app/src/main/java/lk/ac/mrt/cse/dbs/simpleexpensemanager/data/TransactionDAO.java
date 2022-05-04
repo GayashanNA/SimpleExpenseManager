@@ -16,6 +16,7 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data;
 
+import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
 
@@ -42,7 +43,7 @@ public interface TransactionDAO {
      *
      * @return - a list of all the transactions
      */
-    public List<Transaction> getAllTransactionLogs();
+    public List<Transaction> getAllTransactionLogs() throws ParseException;
 
     /***
      * Return a limited amount of transactions logged.
