@@ -123,8 +123,9 @@ public class DBAccountDAO extends SQLiteOpenHelper implements AccountDAO {
             }else {
                 nextBalance = currentBalance + amount ;
             }
-
-
+            String balanceString = Double.toString(nextBalance) ;
+            String updateQuery = "UPDATE " + Constants.ACCOUNT_TABLE + " SET " + Constants.BALANCE_COL + " = " + balanceString + " WHERE " + Constants.ACCOUNT_NO_COL + " = " + accountNo + ";" ;
+            db.execSQL(updateQuery);
         }else {
             //void
         }
