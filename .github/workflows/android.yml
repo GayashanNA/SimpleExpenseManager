@@ -44,7 +44,7 @@ on:
 jobs:
   ## 3
   android_tests:
-    runs-on: [ windows-latest ]
+    runs-on: [ macos-latest ]
     steps:
       - uses: actions/checkout@v2
 
