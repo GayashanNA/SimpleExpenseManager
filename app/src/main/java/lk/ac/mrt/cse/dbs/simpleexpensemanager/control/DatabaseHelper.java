@@ -86,7 +86,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public List<String> getAccountNumbersList() {
         List<String> accountNumbers = new ArrayList<>();
 
-        String ACCOUNT_NUMBER_SELECT_QUERY = "SELECT accountNo FROM account";
+        String ACCOUNT_NUMBER_SELECT_QUERY = "SELECT accountNo FROM account WHERE isActive=1";
 
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery(ACCOUNT_NUMBER_SELECT_QUERY, null);
@@ -109,7 +109,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public List<Account> getAccountsList() {
         List<Account> accounts = new ArrayList<>();
 
-        String ACCOUNT_SELECT_QUERY = "SELECT accountNo, bankName, holderName, balance FROM account";
+        String ACCOUNT_SELECT_QUERY = "SELECT accountNo, bankName, holderName, balance FROM account WHERE isActive=1";
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery(ACCOUNT_SELECT_QUERY, null);
         try {
@@ -131,7 +131,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public Account getAccount(String accountNo) {
         Account account;
-        String ACCOUNT_SELECT_QUERY = "SELECT accountNo, bankName, holderName, balance FROM account WHERE accountNo=?";
+        String ACCOUNT_SELECT_QUERY = "SELECT accountNo, bankName, holderName, balance FROM account WHERE accountNo=? and isActive=1";
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery(ACCOUNT_SELECT_QUERY, new String[]{accountNo});
 

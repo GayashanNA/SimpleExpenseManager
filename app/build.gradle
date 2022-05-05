@@ -26,6 +26,7 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -33,12 +34,27 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            java {
+                srcDirs 'src\\main\\java'
+            }
+        }
+    }
+
+//    testOptions {
+//        unitTests {
+//            includeAndroidResources = true
+//        }
+//    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation files('C:\\Users\\kabil\\OneDrive\\Desktop\\Semester_4\\CS3042 - Database Systems\\MiniProject\\CS3042-SimpleExpenseManager\\app\\libs\\sqlite-jdbc-3.36.0.3.jar')
-    testImplementation 'junit:junit:4.12'
+    androidTestImplementation "androidx.test:runner:1.4.0"
+    androidTestImplementation "androidx.test:rules:1.4.0"
+//    // Optional -- UI testing with Espresso
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.4.0"
+//    testImplementation 'org.robolectric:robolectric:3.0'
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support:design:26.1.0'
 }
