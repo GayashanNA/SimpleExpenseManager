@@ -1,61 +1,61 @@
-#name: Android CI
-#
-#on:
-#  push:
-#    branches: [ master ]
-#  pull_request:
-#    branches: [ master ]
-#
-#jobs:
-#  build:
-#
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#    - uses: actions/checkout@v3
-#    - name: set up JDK 11
-#      uses: actions/setup-java@v3
-#      with:
-#        java-version: '11'
-#        distribution: 'temurin'
-#        cache: gradle
-#
-##    - name: Grant execute permission for gradlew
-##      run: chmod +x ./gradlew
-#
-#    - name: Run Tests
-#      run: ./gradlew test
-#
-#    - name: Build Project
-#      run: ./gradlew assemble
-#
-##    - name: Build with Gradle
-##      run: ./gradlew build
-#
+name: Android CI
 
-## 1
-name: Test and deploy
-
-## Actions that will be executed when you push code currently none
 on:
   push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
-## 2
 jobs:
-  ## 3
-  android_tests:
-    runs-on: [ macos-latest ]
+  build:
+
+    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+    - name: set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: gradle
 
-      - name: Make gradlew executable
-        run: chmod +x ./gradlew
+    - name: Grant execute permission for gradlew
+      run: chmod +x ./gradlew
 
-      - name: Instrumentation Tests
-        uses: reactivecircus/android-emulator-runner@v2
-        with:
-          api-level: 26
-          script: ./gradlew connectedAndroidTest
+    - name: Run Tests
+      run: ./gradlew test
+
+    - name: Build Project
+      run: ./gradlew assemble
+
+    - name: Build with Gradle
+      run: ./gradlew build
+
+
+### 1
+#name: Test and deploy
+#
+### Actions that will be executed when you push code currently none
+#on:
+#  push:
+#
+### 2
+#jobs:
+#  ## 3
+#  android_tests:
+#    runs-on: [ macos-latest ]
+#    steps:
+#      - uses: actions/checkout@v2
+#
+#      - name: Make gradlew executable
+#        run: chmod +x ./gradlew
+#
+#      - name: Instrumentation Tests
+#        uses: reactivecircus/android-emulator-runner@v2
+#        with:
+#          api-level: 26
+#          script: ./gradlew connectedAndroidTest
 
 #name: Build
 #
