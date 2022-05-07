@@ -1,0 +1,74 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright 2015 Department of Computer Science and Engineering, University of Moratuwa.
+4  ~ Licensed under the Apache License, Version 2.0 (the "License");
+5  ~ you may not use this file except in compliance with the License.
+6  ~ You may obtain a copy of the License at
+7  ~
+8  ~                  http://www.apache.org/licenses/LICENSE-2.0
+9  ~
+10  ~ Unless required by applicable law or agreed to in writing, software
+11  ~ distributed under the License is distributed on an "AS IS" BASIS,
+12  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+13  ~ See the License for the specific language governing permissions and
+14  ~ limitations under the License.
+15  ~
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="lk.ac.mrt.cse.dbs.simpleexpensemanager"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="19"
+23-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml
+24        android:targetSdkVersion="26" />
+24-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml
+25
+26    <application
+26-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:21:5-37:19
+27        android:allowBackup="true"
+27-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:22:9-35
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:23:9-43
+29        android:label="@string/app_name"
+29-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:24:9-41
+30        android:supportsRtl="true"
+30-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:25:9-35
+31        android:theme="@style/AppTheme" >
+31-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:26:9-40
+32        <activity
+32-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:27:9-36:20
+33            android:name="lk.ac.mrt.cse.dbs.simpleexpensemanager.ui.MainActivity"
+33-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:28:13-44
+34            android:label="@string/app_name"
+34-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:29:13-45
+35            android:theme="@style/AppTheme.NoActionBar" >
+35-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:30:13-56
+36            <intent-filter>
+36-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:31:13-35:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:17-68
+37-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:34:17-76
+39-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml:34:27-74
+40            </intent-filter>
+41        </activity>
+42
+43        <meta-data
+43-->[com.android.support:design:26.1.0] C:\Users\kabil\.gradle\caches\transforms-3\6e0a9c2c928623eaea8d160cf70e6db0\transformed\design-26.1.0\AndroidManifest.xml:26:9-28:38
+44            android:name="android.support.VERSION"
+44-->[com.android.support:design:26.1.0] C:\Users\kabil\.gradle\caches\transforms-3\6e0a9c2c928623eaea8d160cf70e6db0\transformed\design-26.1.0\AndroidManifest.xml:27:13-51
+45            android:value="26.1.0" />
+45-->[com.android.support:design:26.1.0] C:\Users\kabil\.gradle\caches\transforms-3\6e0a9c2c928623eaea8d160cf70e6db0\transformed\design-26.1.0\AndroidManifest.xml:28:13-35
+46        <meta-data
+46-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\kabil\.gradle\caches\transforms-3\1524d4028407b39956cfb0f1c178bd88\transformed\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
+47            android:name="android.arch.lifecycle.VERSION"
+47-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\kabil\.gradle\caches\transforms-3\1524d4028407b39956cfb0f1c178bd88\transformed\runtime-1.0.0\AndroidManifest.xml:26:13-58
+48            android:value="27.0.0-SNAPSHOT" />
+48-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\kabil\.gradle\caches\transforms-3\1524d4028407b39956cfb0f1c178bd88\transformed\runtime-1.0.0\AndroidManifest.xml:27:13-44
+49    </application>
+50
+51</manifest>
