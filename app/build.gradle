@@ -18,7 +18,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '30.0.2'
     //buildToolsVersion "23.0.2"
 
     defaultConfig {
@@ -43,19 +42,22 @@ android {
         }
     }
 
-//    testOptions {
-//        unitTests {
-//            includeAndroidResources = true
-//        }
-//    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
 }
 
 dependencies {
-    androidTestImplementation "androidx.test:runner:1.4.0"
-    androidTestImplementation "androidx.test:rules:1.4.0"
+//    androidTestImplementation "androidx.test:runner:1.4.0"
+//    androidTestImplementation "androidx.test:rules:1.4.0"
 //    // Optional -- UI testing with Espresso
-    androidTestImplementation "androidx.test.espresso:espresso-core:3.4.0"
+//    androidTestImplementation "androidx.test.espresso:espresso-core:3.4.0"
 //    testImplementation 'org.robolectric:robolectric:3.0'
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support:design:26.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.8'
+    testImplementation 'androidx.test:core:1.0.0'
 }
