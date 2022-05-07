@@ -22,7 +22,7 @@
 22    <uses-sdk
 23        android:minSdkVersion="19"
 23-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml
-24        android:targetSdkVersion="29" />
+24        android:targetSdkVersion="26" />
 24-->C:\Users\kabil\OneDrive\Desktop\Semester_4\CS3042 - Database Systems\MiniProject\CS3042-SimpleExpenseManager\app\src\main\AndroidManifest.xml
 25
 26    <application
