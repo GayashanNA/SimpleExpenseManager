@@ -69,6 +69,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+<<<<<<< HEAD
       - name: Set up our JDK environment
         uses: actions/setup-java@v2
         with:
@@ -93,6 +94,9 @@ jobs:
 
       # Run emulator
       - name: Run integration test on emulator
+=======
+      - name: Instrumentation Tests
+>>>>>>> parent of 046d331... Test Workflow #11
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 29
