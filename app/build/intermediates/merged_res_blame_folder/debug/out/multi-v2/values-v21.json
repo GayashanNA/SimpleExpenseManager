@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/jananga/Desktop/DB_Mini_Project/Try3/SimpleExpenseManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/home/jananga/Desktop/SE_Workglow/SimpleExpenseManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/home/jananga/.gradle/caches/transforms-2/files-2.1/d1d1709d55c8ab5fa359ce49bd908eb5/design-26.1.0/res/values-v21/values-v21.xml",
@@ -61,7 +61,7 @@
                     }
                 },
                 {
-                    "source": "/home/jananga/Desktop/DB_Mini_Project/Try3/SimpleExpenseManager/app/src/main/res/values-v21/styles.xml",
+                    "source": "/home/jananga/Desktop/SE_Workglow/SimpleExpenseManager/app/src/main/res/values-v21/styles.xml",
                     "from": {
                         "startLines": "18",
                         "startColumns": "4",

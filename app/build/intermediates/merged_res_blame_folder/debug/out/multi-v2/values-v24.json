@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/jananga/Desktop/DB_Mini_Project/Try3/SimpleExpenseManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/home/jananga/Desktop/SE_Workglow/SimpleExpenseManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/home/jananga/.gradle/caches/transforms-2/files-2.1/d077425ebc7d279b27502cf2b2becb72/support-media-compat-26.1.0/res/values-v24/values-v24.xml",
