@@ -16,14 +16,49 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager;
 
-import android.app.Application;
-import android.test.ApplicationTestCase;
+import static org.junit.Assert.assertTrue;
 
-/**
- * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
- */
-public class ApplicationTest extends ApplicationTestCase<Application> {
-    public ApplicationTest() {
-        super(Application.class);
+import android.content.Context;
+
+import androidx.test.core.app.ApplicationProvider;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import java.util.Date;
+import java.util.List;
+
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.ExpenseManager;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.PersistentExpenseManager;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
+
+public class ApplicationTest {
+
+    public static final String TEST_BANK_NAME = "testBankName";
+    public static final String TEST_ACCOUNT_NO = "111ABC";
+    public static final String TEST_ACCOUNT_HOLDER_NAME = "testAccountHolderName";
+    public static final int TEST_INITIAL_BALANCE = 1500;
+    private ExpenseManager expenseManager;
+
+    @Before
+    public void setup() {
+        Context context = ApplicationProvider.getApplicationContext();
+        expenseManager = new PersistentExpenseManager(context);
+    }
+
+    @Test
+    public void testAddAccount() {
+        expenseManager.addAccount(TEST_ACCOUNT_NO, TEST_BANK_NAME, TEST_ACCOUNT_HOLDER_NAME, TEST_INITIAL_BALANCE);
+        List<String> accNumList = expenseManager.getAccountNumbersList();
+        assertTrue(accNumList.contains(TEST_ACCOUNT_NO));
+    }
+
+    @Test
+    public void testLogTransaction() {
+        expenseManager.addAccount(TEST_ACCOUNT_NO, TEST_BANK_NAME, TEST_ACCOUNT_HOLDER_NAME, TEST_INITIAL_BALANCE);
+        int beforeSize = expenseManager.getTransactionLogs().size();
+        expenseManager.getTransactionsDAO().logTransaction(new Date(), TEST_ACCOUNT_NO, ExpenseType.EXPENSE, 2500);
+        int afterSize = expenseManager.getTransactionLogs().size();
+        assertTrue(afterSize == beforeSize + 1);
     }
 }
