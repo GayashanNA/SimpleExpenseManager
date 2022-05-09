@@ -38,7 +38,7 @@ jobs:
     needs: build
     strategy:
       matrix:
-        api-level: [21, 23, 29]
+        api-level: [29]
         target: [default]
 
     steps:
@@ -59,8 +59,6 @@ jobs:
         with:
           java-version: 1.8
 
-      - name: Run detekt
-        run: ./gradlew detektCheck
 
       - name: Run unit tests
         run: ./gradlew test --stacktrace
@@ -74,4 +72,3 @@ jobs:
           profile: Nexus 6
           script: ./gradlew connectedCheck --stacktrace
 
-     
