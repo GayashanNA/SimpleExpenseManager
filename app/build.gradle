@@ -58,3 +58,6 @@ dependencies {
     androidTestImplementation "androidx.test:runner:1.4.0"
     androidTestImplementation "androidx.test:rules:1.4.0"
 }
+task wrapper(type: Wrapper) {
+    gradleVersion = '6.5'
+}

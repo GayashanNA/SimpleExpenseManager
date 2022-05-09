@@ -42,104 +42,103 @@
 33-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:24:9-41
 34        android:supportsRtl="true"
 34-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:25:9-35
-35        android:testOnly="true"
-36        android:theme="@style/AppTheme" >
-36-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:26:9-40
-37        <activity
-37-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:27:9-36:20
-38            android:name="lk.ac.mrt.cse.dbs.simpleexpensemanager.ui.MainActivity"
-38-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:28:13-44
-39            android:label="@string/app_name"
-39-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:29:13-45
-40            android:theme="@style/AppTheme.NoActionBar" >
-40-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:30:13-56
-41            <intent-filter>
-41-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:31:13-35:29
-42                <action android:name="android.intent.action.MAIN" />
-42-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:17-68
-42-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:25-66
-43
-44                <category android:name="android.intent.category.LAUNCHER" />
-44-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:34:17-76
-44-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:34:27-74
-45            </intent-filter>
-46        </activity>
-47        <activity
-47-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:27:9-34:20
-48            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
-48-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:28:13-99
-49            android:exported="true"
-49-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:29:13-36
-50            android:theme="@android:style/Theme" >
-50-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:30:13-49
-51            <intent-filter>
-51-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:31:13-33:29
-52                <action android:name="android.intent.action.MAIN" />
-52-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:17-68
-52-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:25-66
-53            </intent-filter>
-54        </activity>
-55        <activity
-55-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:35:9-42:20
-56            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
-56-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:36:13-95
-57            android:exported="true"
-57-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:37:13-36
-58            android:theme="@android:style/Theme" >
-58-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:38:13-49
-59            <intent-filter>
-59-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:31:13-33:29
-60                <action android:name="android.intent.action.MAIN" />
-60-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:17-68
-60-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:25-66
-61            </intent-filter>
-62        </activity>
-63        <activity
-63-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:43:9-50:20
-64            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
-64-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:44:13-103
-65            android:exported="true"
-65-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:45:13-36
-66            android:theme="@android:style/Theme.Dialog" >
-66-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:46:13-56
-67            <intent-filter>
-67-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:31:13-33:29
-68                <action android:name="android.intent.action.MAIN" />
-68-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:17-68
-68-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:25-66
-69            </intent-filter>
-70        </activity>
-71
-72        <service
-72-->[androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
-73            android:name="androidx.room.MultiInstanceInvalidationService"
-73-->[androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
-74            android:directBootAware="true"
-74-->[androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
-75            android:exported="false" />
-75-->[androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
-76
-77        <provider
-77-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-78            android:name="androidx.startup.InitializationProvider"
-78-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-79            android:authorities="lk.ac.mrt.cse.dbs.simpleexpensemanager.androidx-startup"
-79-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-80            android:exported="false" >
-80-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-81            <meta-data
-81-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-82                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-82-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-83                android:value="androidx.startup" />
-83-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-84            <meta-data
-84-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-85                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-85-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-86                android:value="androidx.startup" />
-86-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-87        </provider>
-88    </application>
-89
-90</manifest>
+35        android:theme="@style/AppTheme" >
+35-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:26:9-40
+36        <activity
+36-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:27:9-36:20
+37            android:name="lk.ac.mrt.cse.dbs.simpleexpensemanager.ui.MainActivity"
+37-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:28:13-44
+38            android:label="@string/app_name"
+38-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:29:13-45
+39            android:theme="@style/AppTheme.NoActionBar" >
+39-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:30:13-56
+40            <intent-filter>
+40-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:31:13-35:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:17-68
+41-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:34:17-76
+43-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:34:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:27:9-34:20
+47            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+47-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:28:13-99
+48            android:exported="true"
+48-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:29:13-36
+49            android:theme="@android:style/Theme" >
+49-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:30:13-49
+50            <intent-filter>
+50-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:31:13-33:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:17-68
+51-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:25-66
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:35:9-42:20
+55            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+55-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:36:13-95
+56            android:exported="true"
+56-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:37:13-36
+57            android:theme="@android:style/Theme" >
+57-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:38:13-49
+58            <intent-filter>
+58-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:31:13-33:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:17-68
+59-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:25-66
+60            </intent-filter>
+61        </activity>
+62        <activity
+62-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:43:9-50:20
+63            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+63-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:44:13-103
+64            android:exported="true"
+64-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:45:13-36
+65            android:theme="@android:style/Theme.Dialog" >
+65-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:46:13-56
+66            <intent-filter>
+66-->[androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:31:13-33:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:17-68
+67-->D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:32:25-66
+68            </intent-filter>
+69        </activity>
+70
+71        <service
+71-->[androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
+72            android:name="androidx.room.MultiInstanceInvalidationService"
+72-->[androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
+73            android:directBootAware="true"
+73-->[androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
+74            android:exported="false" />
+74-->[androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
+75
+76        <provider
+76-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+77            android:name="androidx.startup.InitializationProvider"
+77-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+78            android:authorities="lk.ac.mrt.cse.dbs.simpleexpensemanager.androidx-startup"
+78-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+79            android:exported="false" >
+79-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+80            <meta-data
+80-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+81                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+81-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+82                android:value="androidx.startup" />
+82-->[androidx.emoji2:emoji2:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+83            <meta-data
+83-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+84                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+84-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+85                android:value="androidx.startup" />
+85-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+86        </provider>
+87    </application>
+88
+89</manifest>
