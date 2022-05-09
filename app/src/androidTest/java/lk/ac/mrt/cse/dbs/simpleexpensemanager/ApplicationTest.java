@@ -16,14 +16,49 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager;
 
-import android.app.Application;
-import android.test.ApplicationTestCase;
+import android.content.Context;
 
-/**
- * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
- */
-public class ApplicationTest extends ApplicationTestCase<Application> {
-    public ApplicationTest() {
-        super(Application.class);
+
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.ExpenseManager;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.PersistentExpenseManager;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountException;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
+import androidx.test.core.app.ApplicationProvider;
+
+
+public class ApplicationTest {
+    private static ExpenseManager expenseManager;
+
+    @BeforeClass
+    public static void setUp() {
+        Context context = ApplicationProvider.getApplicationContext();
+        assertEquals("lk.ac.mrt.cse.dbs.simpleexpensemanager", context.getPackageName());
+        expenseManager = new PersistentExpenseManager(context);
+    }
+
+    @Test
+    public void testAddAccount() {
+        assertEquals(2, expenseManager.getAccountNumbersList().size());
+        expenseManager.addAccount("123", "ABC Bank", "John", 5.5);
+        assertEquals(3, expenseManager.getAccountNumbersList().size());
+    }
+
+    @Test
+    public void testAddTransaction() {
+        assertEquals(0, expenseManager.getTransactionLogs().size());
+        try {
+            expenseManager.updateAccountBalance("12345A", 1, 1, 2022, ExpenseType.EXPENSE, "100.0");
+        } catch (InvalidAccountException e) {
+            fail();
+        }
+        assertEquals(1, expenseManager.getTransactionLogs().size());
     }
 }

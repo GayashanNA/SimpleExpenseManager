@@ -4,7 +4,17 @@
             "outputFile": "D:\\Desktop\\My things\\DB\\SimpleExpenseManager\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "D:\\Desktop\\Study Materials\\Semester 2\\My Notes\\App development\\Audio Editor\\Audio-Trimmer-Android\\Audio Trimmer\\caches\\transforms-2\\files-2.1\\7fbe6d172b069f6f33ec0a52b6cc161e\\material-1.5.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "D:\\Desktop\\Study Materials\\Semester 2\\My Notes\\App development\\Audio Editor\\Audio-Trimmer-Android\\Audio Trimmer\\caches\\transforms-2\\files-2.1\\21c3ecf98e280316449ae27cb17f9a1a\\appcompat-1.4.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,532,636",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,631,747"
+                    }
+                },
+                {
+                    "source": "D:\\Desktop\\Study Materials\\Semester 2\\My Notes\\App development\\Audio Editor\\Audio-Trimmer-Android\\Audio Trimmer\\caches\\transforms-2\\files-2.1\\b2ba0f4f4627eb627be7dc8494191fc3\\material-1.6.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,10",
                         "startColumns": "4,4,4,4",
@@ -20,16 +30,6 @@
                         "endLines": "11,12,18,24",
                         "endColumns": "121,133,10,10",
                         "endOffsets": "869,1003,1444,1887"
-                    }
-                },
-                {
-                    "source": "D:\\Desktop\\Study Materials\\Semester 2\\My Notes\\App development\\Audio Editor\\Audio-Trimmer-Android\\Audio Trimmer\\caches\\transforms-2\\files-2.1\\21c3ecf98e280316449ae27cb17f9a1a\\appcompat-1.4.1\\res\\values-large-v4\\values-large-v4.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,114,185,256,326,396,464,532,636",
-                        "endColumns": "58,70,70,69,69,67,67,103,115",
-                        "endOffsets": "109,180,251,321,391,459,527,631,747"
                     }
                 }
             ]

@@ -5,7 +5,8 @@ INJECTED from D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidM
 INJECTED from D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:1-39:12
 INJECTED from D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:1-39:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\d9c8547f43bfc98a7c33c7a922993a2d\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.material:material:1.5.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\7fbe6d172b069f6f33ec0a52b6cc161e\material-1.5.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:17:1-53:12
+MERGED from [com.google.android.material:material:1.6.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\b2ba0f4f4627eb627be7dc8494191fc3\material-1.6.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\bd6b1c45a89fcd0f59a0d3667b9c7977\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\21c3ecf98e280316449ae27cb17f9a1a\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:17:1-31:12
@@ -32,6 +33,7 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] D:\Desktop\
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\76a75c6502d93031e6f1d463ce4e8940\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.1.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\eb26039d970d0f3cff3a2fc211910401\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.7.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\9b4bbe17406ebdd5cecd894aeda4ed80\core-1.7.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.test:monitor:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\39b3b5dc17c4bd00369b8faa5bc3efbd\monitor-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\082141e7a08ecc0568dc277abb6b2eb2\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\957cdc958966d73857ef5cfef5ed5719\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.1.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\848758cc9d7219eb09821cfc25f727fb\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -71,8 +73,10 @@ INJECTED from D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidM
 		ADDED from D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:18:11-69
 application
 ADDED from D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml:21:5-37:19
-MERGED from [com.google.android.material:material:1.5.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\7fbe6d172b069f6f33ec0a52b6cc161e\material-1.5.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.5.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\7fbe6d172b069f6f33ec0a52b6cc161e\material-1.5.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:26:5-51:19
+MERGED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:26:5-51:19
+MERGED from [com.google.android.material:material:1.6.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\b2ba0f4f4627eb627be7dc8494191fc3\material-1.6.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.6.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\b2ba0f4f4627eb627be7dc8494191fc3\material-1.6.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\bd6b1c45a89fcd0f59a0d3667b9c7977\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\bd6b1c45a89fcd0f59a0d3667b9c7977\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:24:5-29:19
@@ -123,8 +127,10 @@ INJECTED from D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidM
 INJECTED from D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\d9c8547f43bfc98a7c33c7a922993a2d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\d9c8547f43bfc98a7c33c7a922993a2d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.5.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\7fbe6d172b069f6f33ec0a52b6cc161e\material-1.5.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.5.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\7fbe6d172b069f6f33ec0a52b6cc161e\material-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\b2ba0f4f4627eb627be7dc8494191fc3\material-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\b2ba0f4f4627eb627be7dc8494191fc3\material-1.6.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\bd6b1c45a89fcd0f59a0d3667b9c7977\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\bd6b1c45a89fcd0f59a0d3667b9c7977\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\21c3ecf98e280316449ae27cb17f9a1a\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
@@ -177,6 +183,8 @@ MERGED from [androidx.customview:customview:1.1.0] D:\Desktop\Study Materials\Se
 MERGED from [androidx.customview:customview:1.1.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\eb26039d970d0f3cff3a2fc211910401\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.7.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\9b4bbe17406ebdd5cecd894aeda4ed80\core-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.7.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\9b4bbe17406ebdd5cecd894aeda4ed80\core-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:monitor:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\39b3b5dc17c4bd00369b8faa5bc3efbd\monitor-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:monitor:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\39b3b5dc17c4bd00369b8faa5bc3efbd\monitor-1.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\082141e7a08ecc0568dc277abb6b2eb2\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\082141e7a08ecc0568dc277abb6b2eb2\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\957cdc958966d73857ef5cfef5ed5719\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
@@ -227,6 +235,36 @@ INJECTED from D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidM
 		INJECTED from D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml
 		ADDED from D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Desktop\My things\DB\SimpleExpenseManager\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.REORDER_TASKS
+ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:24:5-72
+	android:name
+		ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:24:22-69
+activity#androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:27:9-34:20
+	android:exported
+		ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:29:13-36
+	android:theme
+		ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:30:13-49
+	android:name
+		ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:28:13-99
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:31:13-33:29
+activity#androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:35:9-42:20
+	android:exported
+		ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:37:13-36
+	android:theme
+		ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:38:13-49
+	android:name
+		ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:36:13-95
+activity#androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:43:9-50:20
+	android:exported
+		ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:45:13-36
+	android:theme
+		ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:46:13-56
+	android:name
+		ADDED from [androidx.test:core:1.4.0] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\ad06d600da4f82e4126a1fe6d216c273\jetified-core-1.4.0\AndroidManifest.xml:44:13-103
 service#androidx.room.MultiInstanceInvalidationService
 ADDED from [androidx.room:room-runtime:2.4.2] D:\Desktop\Study Materials\Semester 2\My Notes\App development\Audio Editor\Audio-Trimmer-Android\Audio Trimmer\caches\transforms-2\files-2.1\25be3ad72c6dd85924fa44d7ed880bfd\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
 	android:exported

@@ -1,0 +1,4 @@
+lk/ac/mrt/cse/dbs/simpleexpensemanager/test/BuildConfig.java
+ lk.ac.mrt.cse.dbs.simpleexpensemanager.test.BuildConfig
+lk/ac/mrt/cse/dbs/simpleexpensemanager/ApplicationTest.java
+ lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest
