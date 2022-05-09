@@ -1,8 +1,8 @@
 # SimpleExpenseManager
-This is an android based basic expense manager application which will be used as a lab assignment for CS3042 - Database Systems course module.
+This is an android based basic expense     manager application which will be used as a lab assignment for CS3042 - Database Systems course module.
 
 ## Description
-During this assignment we will be self-learning how to use an embedded database in an android application. This project is an android application that act as a skeleton. Following is the structure of the application.
+During this assignment we    will be self-learning how to use an embedded database in an android application. This project is an android application that act as a skeleton. Following is the structure of the application.
 
 ![Project Structure](https://photos-6.dropbox.com/t/2/AABUCZrAwldw_NV3Ifvnp7oC4gSKnSgQpobs4XewmqyOfw/12/9253042/png/32x32/3/1449064800/0/2/simpleexpensemanager_project_structure.png/EICo8gYY42wgAigC/W5KIhq-w862dGqauYIvo4akPhVyFsdz4o9X_TOOCnjA?size_mode=3&size=1024x768)
 
