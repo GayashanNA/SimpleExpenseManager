@@ -76,6 +76,23 @@ public class PersistentDBTest {
         }
     }
 
+    @Test
+    public void removeAccount(){
+        addAccounts();
+        assert false;
+        try{
+            accountDAO.removeAccount("111");
+            List<Account> accountList = accountDAO.getAccountsList();
+            for(Account account:accountList){
+                if(account.getAccountNo().equals("111"))    assert false;
+            }
+        }catch(InvalidAccountException err){
+            assert false;
+        }
+
+
+    }
+
     public void logTransactions(){
         Date date = new Date();
         transactionDAO.logTransaction(date,"111",ExpenseType.INCOME,500);
