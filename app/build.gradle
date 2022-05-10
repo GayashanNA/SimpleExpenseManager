@@ -26,6 +26,7 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -40,4 +41,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support:design:26.1.0'
+    androidTestImplementation 'androidx.test:core:1.4.1-alpha06';
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4-alpha06';
+    androidTestImplementation 'androidx.test:runner:1.5.0-alpha03';
 }
