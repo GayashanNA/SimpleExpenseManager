@@ -1,0 +1,30 @@
+
+name: Android CI Pipeline
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        api-level: [26]
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      
+      - name: cache(Gradle)
+        uses: gradle/gradle-build-action@v2
+
+      - name: cache(AVD)
+        uses: action/cache@v3
+        id: avd-cache
+        with:
+          path: |
+            ~/.android/avd/*
+            ~/android/adb*
+          key: avd-${{matrix.api-level}}
