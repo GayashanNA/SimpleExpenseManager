@@ -1,4 +1,4 @@
-#Sun May 08 00:30:29 IST 2022
-base.0=/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Tue May 17 23:13:56 IST 2022
+base.0=/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

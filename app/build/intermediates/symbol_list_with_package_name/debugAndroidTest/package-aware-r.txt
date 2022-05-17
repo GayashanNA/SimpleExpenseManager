@@ -1,0 +1,3 @@
+lk.ac.mrt.cse.dbs.simpleexpensemanager.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

@@ -16,14 +16,54 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager;
 
+import static org.junit.Assert.assertTrue;
+
+import static lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType.EXPENSE;
+
 import android.app.Application;
+import android.content.Context;
 import android.test.ApplicationTestCase;
+
+import androidx.test.core.app.ApplicationProvider;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import java.util.List;
+
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.ExpenseManager;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.PersistentExpenseManager;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.exception.ExpenseManagerException;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountException;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 
 /**
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
  */
-public class ApplicationTest extends ApplicationTestCase<Application> {
-    public ApplicationTest() {
-        super(Application.class);
+public class ApplicationTest {
+    private static ExpenseManager expenseManager;
+
+    @Before
+    public void setUp() throws ExpenseManagerException {
+        Context context = ApplicationProvider.getApplicationContext();
+        expenseManager = new PersistentExpenseManager(context);
+
+
     }
+
+    @Test
+    public void testAddAccount() {
+        expenseManager.addAccount("190564N", "BoC", "MahindaR", 50000000);
+        List<String> accountNumbers = expenseManager.getAccountNumbersList();
+        assertTrue(accountNumbers.contains("190564N"));
+    }
+
+    @Test
+    public void testAddTransactions() throws InvalidAccountException {
+        int transactions = expenseManager.getTransactionLogs().size();
+        expenseManager.updateAccountBalance("190564N", 9, 5, 2022, EXPENSE,  "4500");
+        int transactions_ = expenseManager.getTransactionLogs().size();
+        assertTrue(transactions_ == transactions + 1);
+    }
+
 }

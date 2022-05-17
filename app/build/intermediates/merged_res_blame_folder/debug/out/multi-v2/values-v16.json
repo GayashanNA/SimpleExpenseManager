@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/nirmal/.gradle/caches/transforms-2/files-2.1/45642fd0a6138345441bf0a6b6a7b84e/support-compat-26.1.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/home/nirmal/.gradle/caches/transforms-2/files-2.1/22201284f06052f57e5af9bcb65a52a3/appcompat-v7-26.1.0/res/values-v16/values-v16.xml",
+                    "source": "/home/nirmal/.gradle/caches/transforms-3/6b9b50c4d8c3b8c03e839aa5266dd695/transformed/appcompat-v7-26.1.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/nirmal/.gradle/caches/transforms-3/5f73f6e60b5d3708c89ef864d43025d1/transformed/support-compat-26.1.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

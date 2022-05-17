@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/nirmal/.gradle/caches/transforms-2/files-2.1/22201284f06052f57e5af9bcb65a52a3/appcompat-v7-26.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/nirmal/.gradle/caches/transforms-3/6b9b50c4d8c3b8c03e839aa5266dd695/transformed/appcompat-v7-26.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/nirmal/.gradle/caches/transforms-2/files-2.1/d1d1709d55c8ab5fa359ce49bd908eb5/design-26.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/nirmal/.gradle/caches/transforms-3/b695e826180a520aeeb3dae9e64baca0/transformed/design-26.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v28/values-v28.xml",
+            "map": [
+                {
+                    "source": "/home/nirmal/.gradle/caches/transforms-3/ad7a3ba1ecabb15887da9ed8f181167f/transformed/core-1.4.1-alpha06/res/values-v28/values.xml",
+                    "from": {
+                        "startLines": "4,13",
+                        "startColumns": "0,0",
+                        "startOffsets": "180,659",
+                        "endLines": "12,21",
+                        "endColumns": "8,8",
+                        "endOffsets": "658,1135"
+                    },
+                    "to": {
+                        "startLines": "2,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,538",
+                        "endLines": "10,19",
+                        "endColumns": "8,8",
+                        "endOffsets": "533,1014"
+                    }
+                }
+            ]
+        }
+    ]
+}

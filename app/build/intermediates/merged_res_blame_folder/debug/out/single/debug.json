@@ -1,38 +1,38 @@
 [
     {
-        "merged": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/res/merged/debug/layout_fragment_add_account.xml.flat",
-        "source": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/src/main/res/layout/fragment_add_account.xml"
+        "merged": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/nirmal/Music/SimpleExpenseManager/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/nirmal/Music/SimpleExpenseManager/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/nirmal/Music/SimpleExpenseManager/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/res/merged/debug/layout_fragment_expense_logs.xml.flat",
-        "source": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/src/main/res/layout/fragment_expense_logs.xml"
+        "merged": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/nirmal/Music/SimpleExpenseManager/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/src/main/res/layout/activity_main.xml"
+        "merged": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/nirmal/Music/SimpleExpenseManager/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/res/merged/debug/layout_fragment_manage_expenses.xml.flat",
-        "source": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/src/main/res/layout/fragment_manage_expenses.xml"
+        "merged": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/merged_res/debug/layout_fragment_expense_logs.xml.flat",
+        "source": "/home/nirmal/Music/SimpleExpenseManager/app/src/main/res/layout/fragment_expense_logs.xml"
     },
     {
-        "merged": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/merged_res/debug/layout_fragment_add_account.xml.flat",
+        "source": "/home/nirmal/Music/SimpleExpenseManager/app/src/main/res/layout/fragment_add_account.xml"
     },
     {
-        "merged": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/merged_res/debug/layout_fragment_manage_expenses.xml.flat",
+        "source": "/home/nirmal/Music/SimpleExpenseManager/app/src/main/res/layout/fragment_manage_expenses.xml"
     },
     {
-        "merged": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/home/nirmal/Music/SimpleExpenseManager/app/src/main/res/layout/activity_main.xml"
     }
 ]

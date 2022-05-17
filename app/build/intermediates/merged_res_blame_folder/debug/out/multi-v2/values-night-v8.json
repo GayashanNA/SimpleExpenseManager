@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/nirmal/Android_Projects/SimpleExpenseManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/nirmal/.gradle/caches/transforms-2/files-2.1/22201284f06052f57e5af9bcb65a52a3/appcompat-v7-26.1.0/res/values-night-v8/values-night-v8.xml",
+                    "source": "/home/nirmal/.gradle/caches/transforms-3/6b9b50c4d8c3b8c03e839aa5266dd695/transformed/appcompat-v7-26.1.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
