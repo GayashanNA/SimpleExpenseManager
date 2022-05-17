@@ -1,4 +1,0 @@
-#Tue May 17 23:21:37 IST 2022
-base.0=/home/nirmal/Music/SimpleExpenseManager/app/build/intermediates/dex/debugAndroidTest/mergeDexDebugAndroidTest/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex

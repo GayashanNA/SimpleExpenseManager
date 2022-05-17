@@ -1,2 +1,0 @@
-05-17 23:21:56.544  7927  7961 I TestRunner: started: testAddTransactions(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
-05-17 23:21:56.619  7927  7961 I TestRunner: finished: testAddTransactions(lk.ac.mrt.cse.dbs.simpleexpensemanager.ApplicationTest)
