@@ -19,9 +19,6 @@ import  android.database.sqlite.*;
 import android.os.Environment;
 import android.support.annotation.NonNull;
 
-/**
- * Created by Iresha on 05/12/2015.
- */
 public class SQLiteAccountDAO implements AccountDAO {
     SQLiteDatabase db;
     java.io.File filename = Constants.CONTEXT.getFilesDir();
