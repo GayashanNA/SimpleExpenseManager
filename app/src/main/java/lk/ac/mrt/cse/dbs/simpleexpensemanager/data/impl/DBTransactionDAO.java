@@ -33,7 +33,7 @@ public class DBTransactionDAO extends DatabaseHelper implements TransactionDAO {
         cv.put(ACCOUNT_NO,accountNo);
         cv.put(AMOUNT,amount);
         cv.put(TRANSACTION_TYPE, String.valueOf(expenseType));
-        cv.put(DATE, String.valueOf(date));
+        cv.put(DATE, String.valueOf(date.getTime()));
 
         db.insert(TRANSACTIONS_TABLE,null,cv);
         db.close();
@@ -54,7 +54,7 @@ public class DBTransactionDAO extends DatabaseHelper implements TransactionDAO {
                 Date date = null;
                 try {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                        date = new SimpleDateFormat("yyyy-MM-dd").parse(cursor.getString(4));
+                        date = new Date(Long.valueOf(cursor.getString(4)));
                     }
                 } catch (Exception e) {
                 }
