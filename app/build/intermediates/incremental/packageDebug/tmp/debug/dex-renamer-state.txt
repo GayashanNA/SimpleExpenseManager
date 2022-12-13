@@ -1,0 +1,4 @@
+#Tue Dec 13 08:39:16 IST 2022
+base.0=E\:\\Mora\\Semester 3\\Data Base\\LAbs\\Mini project\\SimpleExpenseManager\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
