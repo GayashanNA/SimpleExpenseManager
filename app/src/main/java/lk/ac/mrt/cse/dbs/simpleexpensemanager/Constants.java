@@ -16,9 +16,15 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
+
 /**
  *
  */
 public class Constants {
+    @SuppressLint("StaticFieldLeak")
+    public static Context CONTEXT;
     public static final String EXPENSE_MANAGER = "expense-manager";
 }
+
